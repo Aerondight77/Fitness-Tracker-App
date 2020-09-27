@@ -8,6 +8,8 @@
 #include "Fitness App MFC 1Dlg.h"
 #include "afxdialogex.h"
 
+#include "Account.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -95,6 +97,13 @@ HCURSOR CFitnessAppMFC1Dlg::OnQueryDragIcon()
 void CFitnessAppMFC1Dlg::OnBnClickedLoginButton()
 {
 	// TODO: Add your control notification handler code here
+
+	// Get the string entered in the Email edit control box.
+	CString emailStr = _T("");
+	IDC_EMAIL_EDIT.GetWindowTextW(emailStr);
+
+	// Get the string entered in the Password edit control box.
+
 	CWnd* theText = GetDlgItem(IDC_LOGIN_TEXT);
 	theText->SetWindowTextW(L"Oh yeah!");
 }
