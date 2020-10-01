@@ -1,41 +1,41 @@
 
-// Fitness App MFC 1.cpp : Defines the class behaviors for the application.
+// Fitness App MFC 2.cpp : Defines the class behaviors for the application.
 //
 
 #include "pch.h"
 #include "framework.h"
-#include "Fitness App MFC 1.h"
-#include "Fitness App MFC 1Dlg.h"
+#include "Fitness App MFC 2.h"
+#include "Fitness App MFC 2Dlg.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
 
 
-// CFitnessAppMFC1App
+// CFitnessAppMFC2App
 
-BEGIN_MESSAGE_MAP(CFitnessAppMFC1App, CWinApp)
+BEGIN_MESSAGE_MAP(CFitnessAppMFC2App, CWinApp)
 	ON_COMMAND(ID_HELP, &CWinApp::OnHelp)
 END_MESSAGE_MAP()
 
 
-// CFitnessAppMFC1App construction
+// CFitnessAppMFC2App construction
 
-CFitnessAppMFC1App::CFitnessAppMFC1App()
+CFitnessAppMFC2App::CFitnessAppMFC2App()
 {
 	// TODO: add construction code here,
 	// Place all significant initialization in InitInstance
 }
 
 
-// The one and only CFitnessAppMFC1App object
+// The one and only CFitnessAppMFC2App object
 
-CFitnessAppMFC1App theApp;
+CFitnessAppMFC2App theApp;
 
 
-// CFitnessAppMFC1App initialization
+// CFitnessAppMFC2App initialization
 
-BOOL CFitnessAppMFC1App::InitInstance()
+BOOL CFitnessAppMFC2App::InitInstance()
 {
 	CWinApp::InitInstance();
 
@@ -56,10 +56,10 @@ BOOL CFitnessAppMFC1App::InitInstance()
 	// such as the name of your company or organization
 	SetRegistryKey(_T("Local AppWizard-Generated Applications"));
 
-	CFitnessAppMFC1Dlg dlg;
+	CFitnessAppMFC2Dlg dlg;
 	m_pMainWnd = &dlg;
 	INT_PTR nResponse = dlg.DoModal();
-	if (nResponse == IDOK)
+	if (nResponse == btnLogin)
 	{
 		// TODO: Place code here to handle when the dialog is
 		//  dismissed with OK

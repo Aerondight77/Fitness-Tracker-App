@@ -1,20 +1,20 @@
 
-// Fitness App MFC 1Dlg.h : header file
+// Fitness App MFC 2Dlg.h : header file
 //
 
 #pragma once
 
 
-// CFitnessAppMFC1Dlg dialog
-class CFitnessAppMFC1Dlg : public CDialogEx
+// CFitnessAppMFC2Dlg dialog
+class CFitnessAppMFC2Dlg : public CDialog
 {
 // Construction
 public:
-	CFitnessAppMFC1Dlg(CWnd* pParent = nullptr);	// standard constructor
+	CFitnessAppMFC2Dlg(CWnd* pParent = nullptr);	// standard constructor
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_FITNESSAPPMFC1_DIALOG };
+	enum { IDD = IDD_FITNESSAPPMFC2_DIALOG };
 #endif
 
 	protected:
@@ -31,6 +31,9 @@ protected:
 	afx_msg HCURSOR OnQueryDragIcon();
 	DECLARE_MESSAGE_MAP()
 public:
-
-	afx_msg void OnBnClickedLoginButton();
+	CEdit m_EditUsername;
+	CString m_Username;
+	CString m_Password;
+	afx_msg void OnBnClickedbtnregister();
+	afx_msg void OnBnClickedbtnlogin();
 };

@@ -1,5 +1,5 @@
 
-// Fitness App MFC 1.h : main header file for the PROJECT_NAME application
+// Fitness App MFC 2.h : main header file for the PROJECT_NAME application
 //
 
 #pragma once
@@ -11,14 +11,14 @@
 #include "resource.h"		// main symbols
 
 
-// CFitnessAppMFC1App:
-// See Fitness App MFC 1.cpp for the implementation of this class
+// CFitnessAppMFC2App:
+// See Fitness App MFC 2.cpp for the implementation of this class
 //
 
-class CFitnessAppMFC1App : public CWinApp
+class CFitnessAppMFC2App : public CWinApp
 {
 public:
-	CFitnessAppMFC1App();
+	CFitnessAppMFC2App();
 
 // Overrides
 public:
@@ -29,4 +29,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern CFitnessAppMFC1App theApp;
+extern CFitnessAppMFC2App theApp;
