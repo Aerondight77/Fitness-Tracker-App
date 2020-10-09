@@ -7,8 +7,6 @@
 #define IDS_ABOUTBOX                    101
 #define IDD_FITNESSAPP_DIALOG           102
 #define IDR_MAINFRAME                   128
-#define IDD_NEWACCOUNT_DLG              130
-#define IDD_FITNESSAPPMFC2_DIALOG       131
 #define txtUserHeightInch               1000
 #define txtUserWeeklyGoal               1001
 #define txtUserWeight                   1002
@@ -40,11 +38,6 @@
 #define txtHoursSlept                   1033
 #define txtSummaryIntake                1034
 #define btnWorkOutUpdate                1035
-#define txtUser                         1036
-#define IDC_EDIT2                       1037
-#define txtPassword                     1037
-#define btnLogin                        1038
-#define IDC_BUTTON1                     1039
 #define txtSummaryHoursSlept            1042
 #define txtSummaryCupsWater             1043
 
