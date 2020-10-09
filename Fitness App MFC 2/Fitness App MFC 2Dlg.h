@@ -36,4 +36,5 @@ public:
 	CString m_Password;
 	afx_msg void OnBnClickedbtnregister();
 	afx_msg void OnBnClickedbtnlogin();
+	afx_msg void OnBnClickedTest();
 };

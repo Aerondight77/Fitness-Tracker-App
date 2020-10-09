@@ -11,6 +11,9 @@
 #include "CNewAccountDlg.h"
 #include <stdio.h>
 
+// Includes for Main Window
+#include "CMainWindow.h" //for the Login button to go to Main Window
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -150,6 +153,9 @@ void CFitnessAppMFC2Dlg::OnBnClickedbtnlogin()
 				if (strcmp(ascii2, PasswordFromFile) == 0)
 				{
 					ValidLogin = true;
+					CMainWindow mainWindowDialog;	// MOVE THESE TWO LINES TO LINK BUTTON TO MAIN WINDOW
+					mainWindowDialog.DoModal();		// MOVE THESE TWO LINES TO LINK BUTTON TO MAIN WINDOW	
+					break; //ADDED BREAK, OR ELSE IT OPENS MULTIPLE MAIN WINDOWS FOR EACH LINE
 				}
 				else
 					ValidLogin = false;
@@ -162,13 +168,13 @@ void CFitnessAppMFC2Dlg::OnBnClickedbtnlogin()
 			AfxMessageBox(_T("Invalid Credentials. Please try again"));
 			this->m_EditUsername.SetFocus();
 		}
-
 		fclose(fleCredentials);
 	}
 	catch (...)
 	{
 		AfxMessageBox(_T("Could not validate the credentials"));
 	}
-
 	UpdateData(FALSE);
 }
+
+

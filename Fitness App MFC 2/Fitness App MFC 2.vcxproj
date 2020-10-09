@@ -183,6 +183,7 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CMainWindow.h" />
     <ClInclude Include="CNewAccountDlg.h" />
     <ClInclude Include="Fitness App MFC 2.h" />
     <ClInclude Include="Fitness App MFC 2Dlg.h" />
@@ -192,6 +193,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CMainWindow.cpp" />
     <ClCompile Include="CNewAccountDlg.cpp" />
     <ClCompile Include="Fitness App MFC 2.cpp" />
     <ClCompile Include="Fitness App MFC 2Dlg.cpp" />
