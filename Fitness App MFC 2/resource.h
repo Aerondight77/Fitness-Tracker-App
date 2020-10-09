@@ -23,7 +23,6 @@
 #define txtUserWeight                   1015
 #define txtUserGender                   1016
 #define txtUserAge                      1017
-#define IDC_EDIT9                       1018
 #define txtToDo1                        1019
 #define txtToDo2                        1020
 #define txtToDo3                        1021
@@ -39,13 +38,16 @@
 #define txtSundayCals                   1031
 #define txtTotalWeekCals                1032
 #define txtWeeklyGoal                   1033
-#define txtGoalPercent                  1033
 #define IDC_EDIT25                      1034
+#define txtPercentGoal                  1034
 #define IDC_CHECK1                      1035
 #define IDC_CHECK2                      1036
 #define IDC_CHECK3                      1037
 #define IDC_CHECK4                      1038
 #define IDC_CHECK5                      1039
+#define IDC_SPIN1                       1040
+#define btnUpdate                       1041
+#define txtUserWeeklyGoal               1042
 
 // Next default values for new objects
 // 
@@ -53,7 +55,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        135
 #define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1036
+#define _APS_NEXT_CONTROL_VALUE         1043
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
