@@ -1,6 +1,7 @@
 #pragma once
 
-
+#include <string>
+extern std::string usernameTXT;
 // CNewAccountDlg dialog
 
 class CNewAccountDlg : public CDialog

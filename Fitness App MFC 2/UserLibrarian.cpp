@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "UserLibrarian.h"
+#include "CNewAccountDlg.h"
 
 #include <fstream>
 
@@ -12,6 +13,7 @@ UserLibrarian::~UserLibrarian(void)
 {
 }
 
+
 //Saves the userHeightVar to a file
 void UserLibrarian::recordStats(string sumCalIntake, string sumHoursSlept, string sumCupsWater,
 	string piHeight, string piHeightInch, string piWeight, string piGender, string piAge, string piWeeklyGoal,
@@ -19,7 +21,8 @@ void UserLibrarian::recordStats(string sumCalIntake, string sumHoursSlept, strin
 	string wlCalMonday, string wlCalTuesday, string wlCalWednesday, string wlCalThursday, string wlCalFriday, string wlCalSaturday, string wlCalSunday, string wlCalTotalBurned, string wlCalWeeklyGoal, string wlCalPercentGoal)
 {
 	ofstream outFile;
-	outFile.open("User.txt"); //name of the file you want to open
+	//outFile.open("User.txt"); //name of the file you want to open
+	outFile.open(usernameTXT);
 
 	outFile << sumCalIntake << "\n";
 	outFile << sumHoursSlept << "\n";

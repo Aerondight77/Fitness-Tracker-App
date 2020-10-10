@@ -7,8 +7,9 @@
 #include "CNewAccountDlg.h"
 #include "afxdialogex.h"
 #include "afxwin.h"
+#include <string>
 
-
+std::string usernameTXT = "User.txt";
 // CNewAccountDlg dialog
 
 IMPLEMENT_DYNAMIC(CNewAccountDlg, CDialog)
@@ -76,17 +77,25 @@ void CNewAccountDlg::OnBnClickedbtncreateaccount()
 	}
 
 	FILE* fleCredentials;
+	FILE* fleCredentials2;
 
 	try {
+		CT2CA usernameTXTFile(m_Username);
+		std::string fileName = usernameTXTFile + ".txt";
+		usernameTXT = fileName;  // GLOBAL VARIABLE
 		// Create a new file or open the existing one
-		fleCredentials = fopen("credentials.txt", "a+");
+		fleCredentials2 = fopen("credentials.txt", "a+");
+		fleCredentials = fopen(fileName.c_str(), "a+");
 		// Add the username to the file
-		fprintf(fleCredentials, "%ls ", (LPCTSTR)m_Username);
+		fprintf(fleCredentials2, "%ls ", (LPCTSTR)m_Username);
+		//fprintf(fleCredentials, "%ls ", (LPCTSTR)m_Username);
 		// Add the password to the file
-		fprintf(fleCredentials, "%ls\n", (LPCTSTR)m_Password);
+		fprintf(fleCredentials2, "%ls\n", (LPCTSTR)m_Password);
+		//fprintf(fleCredentials, "%ls\n", (LPCTSTR)m_Password);
 
 		// After using it, close the file
 		fclose(fleCredentials);
+		fclose(fleCredentials2);
 	}
 	catch (...)
 	{

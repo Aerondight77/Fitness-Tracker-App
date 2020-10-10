@@ -10,6 +10,7 @@
 #include ".\Fitness App MFC 2Dlg.h"
 #include "CNewAccountDlg.h"
 #include <stdio.h>
+#include <string>
 
 // Includes for Main Window
 #include "CMainWindow.h" //for the Login button to go to Main Window
@@ -143,6 +144,8 @@ void CFitnessAppMFC2Dlg::OnBnClickedbtnlogin()
 
 			// Compare the typed username with the username from the file
 			CT2A ascii(m_Username);
+			CT2CA fileName(m_Username);
+			usernameTXT = fileName + ".txt";
 			if (strcmp(ascii, UsernameFromFile) == 0)
 			{
 				// With the current username, retrieve the corresponding password

@@ -4,6 +4,7 @@
 #include "pch.h"
 #include "Fitness App MFC 2.h"
 #include "Fitness App MFC 2Dlg.h"
+#include "CNewAccountDlg.h"
 #include "CMainWindow.h"
 #include "afxdialogex.h"
 
@@ -262,7 +263,8 @@ void CMainWindow::OnBnClickedbtnloadfromfile()
 	// Convert String back to Cstring
 	
 	// Open the file
-	ifstream ReadUserFile("User.txt");   // ADJUST FILE NAME HERE
+	//ifstream ReadUserFile("User.txt");   // ADJUST FILE NAME HERE
+	ifstream ReadUserFile(usernameTXT);
 
 	// Begin filling fields, top to bottom
 	// TODAY'S SUMMARY
