@@ -153,8 +153,10 @@ void CFitnessAppMFC2Dlg::OnBnClickedbtnlogin()
 				if (strcmp(ascii2, PasswordFromFile) == 0)
 				{
 					ValidLogin = true;
+					ShowWindow(SW_HIDE);  // THIS WILL HIDE THE LOGIN WINDOW WHEN MAIN WINDOW OPENS
 					CMainWindow mainWindowDialog;	// MOVE THESE TWO LINES TO LINK BUTTON TO MAIN WINDOW
 					mainWindowDialog.DoModal();		// MOVE THESE TWO LINES TO LINK BUTTON TO MAIN WINDOW	
+					EndDialog(0);   // THIS WILL HIDE THE LOGIN WINDOW WHEN MAIN WINDOW OPENS
 					break; //ADDED BREAK, OR ELSE IT OPENS MULTIPLE MAIN WINDOWS FOR EACH LINE
 				}
 				else

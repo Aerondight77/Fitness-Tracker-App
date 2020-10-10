@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include "Fitness App MFC 2.h"
+#include "Fitness App MFC 2Dlg.h"
 #include "CMainWindow.h"
 #include "afxdialogex.h"
 
