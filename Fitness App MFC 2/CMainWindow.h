@@ -49,4 +49,5 @@ public:
 	CString summaryCalIntakeVar;
 	CString summaryHoursSleptVar;
 	CString summaryCupsWaterVar;
+	afx_msg void OnBnClickedbtnloadfromfile();
 };

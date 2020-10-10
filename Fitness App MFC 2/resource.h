@@ -50,6 +50,8 @@
 #define txtUserWeeklyGoal               1042
 #define IDC_COMBO1                      1043
 #define btnSaveToFile                   1044
+#define IDC_BUTTON2                     1046
+#define btnLoadFromFile                 1046
 
 // Next default values for new objects
 // 
@@ -57,7 +59,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        135
 #define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1046
+#define _APS_NEXT_CONTROL_VALUE         1047
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

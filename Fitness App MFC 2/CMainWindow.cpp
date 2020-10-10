@@ -7,10 +7,11 @@
 #include "CMainWindow.h"
 #include "afxdialogex.h"
 
+// added after project creation
 #include <ctime>
 #include <string>
 #include "UserLibrarian.h"
-
+#include <fstream>
 
 using namespace std;
 
@@ -88,6 +89,7 @@ void CMainWindow::DoDataExchange(CDataExchange* pDX)
 BEGIN_MESSAGE_MAP(CMainWindow, CDialogEx)
 	ON_BN_CLICKED(btnUpdate, &CMainWindow::OnBnClickedbtnupdate)
 	ON_BN_CLICKED(btnSaveToFile, &CMainWindow::OnBnClickedbtnsavetofile)
+	ON_BN_CLICKED(btnLoadFromFile, &CMainWindow::OnBnClickedbtnloadfromfile)
 END_MESSAGE_MAP()
 
 
@@ -250,4 +252,100 @@ void CMainWindow::OnBnClickedbtnsavetofile()
 		strToDol, strToDo2, strToDo3, strToDo4, strToDo5, strNewHoursSlept,
 		strNewCalMonday, strNewCalTuesday, strNewCalWednesday, strNewCalThursday, strNewCalFriday, strNewCalSaturday, strNewCalSunday, strNewCalTotalBurned, strNewCalWeeklyGoal, strNewCalPercentGoal);
 
+}
+
+
+void CMainWindow::OnBnClickedbtnloadfromfile()
+{
+	// String to pick up getline from text
+	string textToString;
+	// Convert String back to Cstring
+	
+	// Open the file
+	ifstream ReadUserFile("User.txt");   // ADJUST FILE NAME HERE
+
+	// Begin filling fields, top to bottom
+	// TODAY'S SUMMARY
+	getline(ReadUserFile, textToString);
+	CString cs1(textToString.c_str());
+	SetDlgItemText(txtSummaryIntake, cs1);
+	getline(ReadUserFile, textToString);
+	CString cs2(textToString.c_str());
+	SetDlgItemText(txtSummaryHoursSlept, cs2);
+	getline(ReadUserFile, textToString);
+	CString cs3(textToString.c_str());
+	SetDlgItemText(txtSummaryCupsWater, cs3);
+	// PERSONAL INFO
+	getline(ReadUserFile, textToString);
+	CString cs4(textToString.c_str());
+	SetDlgItemText(txtUserHeightFeet, cs4);
+	getline(ReadUserFile, textToString);
+	CString cs5(textToString.c_str());
+	SetDlgItemText(txtUserHeightInch, cs5);
+	getline(ReadUserFile, textToString);
+	CString cs6(textToString.c_str());
+	SetDlgItemText(txtUserWeight, cs6);
+	getline(ReadUserFile, textToString);
+	CString cs7(textToString.c_str());
+	SetDlgItemText(txtUserGender, cs7);
+	getline(ReadUserFile, textToString);
+	CString cs8(textToString.c_str());
+	SetDlgItemText(txtUserAge, cs8);
+	getline(ReadUserFile, textToString);
+	CString cs9(textToString.c_str());
+	SetDlgItemText(txtUserWeeklyGoal, cs9);
+	// TO-DO LIST
+	getline(ReadUserFile, textToString);
+	CString cs10(textToString.c_str());
+	SetDlgItemText(txtToDo1, cs10);
+	getline(ReadUserFile, textToString);
+	CString cs11(textToString.c_str());
+	SetDlgItemText(txtToDo2, cs11);
+	getline(ReadUserFile, textToString);
+	CString cs12(textToString.c_str());
+	SetDlgItemText(txtToDo3, cs12);
+	getline(ReadUserFile, textToString);
+	CString cs13(textToString.c_str());
+	SetDlgItemText(txtToDo4, cs13);
+	getline(ReadUserFile, textToString);
+	CString cs14(textToString.c_str());
+	SetDlgItemText(txtToDo5, cs14);
+	// HOURS SLEPT
+	getline(ReadUserFile, textToString);
+	CString cs15(textToString.c_str());
+	SetDlgItemText(txtHoursSlept, cs15);
+	// WORKOUT LOG
+	getline(ReadUserFile, textToString);
+	CString cs16(textToString.c_str());
+	SetDlgItemText(txtMondayCals, cs16);
+	getline(ReadUserFile, textToString);
+	CString cs17(textToString.c_str());
+	SetDlgItemText(txtTuesdayCals, cs17);
+	getline(ReadUserFile, textToString);
+	CString cs18(textToString.c_str());
+	SetDlgItemText(txtWednesdayCals, cs18);
+	getline(ReadUserFile, textToString);
+	CString cs19(textToString.c_str());
+	SetDlgItemText(txtThursdayCals, cs19);
+	getline(ReadUserFile, textToString);
+	CString cs20(textToString.c_str());
+	SetDlgItemText(txtFridayCals, cs20);
+	getline(ReadUserFile, textToString);
+	CString cs21(textToString.c_str());
+	SetDlgItemText(txtSaturdayCals, cs21);
+	getline(ReadUserFile, textToString);
+	CString cs22(textToString.c_str());
+	SetDlgItemText(txtSundayCals, cs22);
+	getline(ReadUserFile, textToString);
+	CString cs23(textToString.c_str());
+	SetDlgItemText(txtTotalWeekCals, cs23);
+	getline(ReadUserFile, textToString);
+	CString cs24(textToString.c_str());
+	SetDlgItemText(txtWeeklyGoal, cs24);
+	getline(ReadUserFile, textToString);
+	CString cs25(textToString.c_str());
+	SetDlgItemText(txtPercentGoal, cs25);
+	
+	// Close the file
+	ReadUserFile.close();
 }
