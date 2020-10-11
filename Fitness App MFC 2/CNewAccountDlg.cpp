@@ -10,6 +10,7 @@
 #include <string>
 
 std::string usernameTXT = "User.txt";
+std::string strUserName = "USER";
 // CNewAccountDlg dialog
 
 IMPLEMENT_DYNAMIC(CNewAccountDlg, CDialog)
@@ -82,7 +83,7 @@ void CNewAccountDlg::OnBnClickedbtncreateaccount()
 	try {
 		CT2CA usernameTXTFile(m_Username);
 		std::string fileName = usernameTXTFile + ".txt";
-		usernameTXT = fileName;  // GLOBAL VARIABLE
+		usernameTXT = fileName;  // GLOBAL VARIABLE		
 		// Create a new file or open the existing one
 		fleCredentials2 = fopen("credentials.txt", "a+");
 		fleCredentials = fopen(fileName.c_str(), "a+");

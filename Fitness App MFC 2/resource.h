@@ -52,6 +52,7 @@
 #define btnSaveToFile                   1044
 #define IDC_BUTTON2                     1046
 #define btnLoadFromFile                 1046
+#define staticLoggedUser                1048
 
 // Next default values for new objects
 // 
@@ -59,7 +60,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        135
 #define _APS_NEXT_COMMAND_VALUE         32772
-#define _APS_NEXT_CONTROL_VALUE         1047
+#define _APS_NEXT_CONTROL_VALUE         1049
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

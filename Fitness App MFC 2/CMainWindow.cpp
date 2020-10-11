@@ -108,10 +108,22 @@ void CMainWindow::OnBnClickedbtnupdate()
 	double dUserWeeklyGoal = _ttof(textInput);
 
 	// ============ PERSONAL INFO SECTION =============
+	GetDlgItemText(txtUserWeight, textInput);
+	double dUserWeight = _ttof(textInput);
+
+	string strUserWeight = to_string(dUserWeight);
+	CString csUserWeight(strUserWeight.c_str());
+	SetDlgItemText(txtSummaryCupsWater, csUserWeight);
 
 	// ============ TO-DO LIST SECTION =============
 
 	// ============ HOUR'S SLEPT SECTION =============
+	GetDlgItemText(txtHoursSlept, textInput);
+	double dHoursSlept = _ttof(textInput);
+
+	string strHoursSlept = to_string(dHoursSlept);
+	CString csHoursSlept(strHoursSlept.c_str());
+	SetDlgItemText(txtSummaryHoursSlept, csHoursSlept);
 
 	// ============ WORKOUT LOG SECTION =============
 	GetDlgItemText(txtMondayCals, textInput);
