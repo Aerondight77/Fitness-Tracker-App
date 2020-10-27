@@ -1,4 +1,4 @@
-333
+5500
 9.000000
 172.000000
 5
@@ -7,11 +7,11 @@
 Male
 99
 8000
-Try to not get fat
+Run on the treadmill
 Get better at programming
 Go for a jog in the evening
-Eat lots of ice cream
-Try to REALLLLLY not get fat
+Do 100 pushups
+Bike for 10 miles
 9
 1000
 1054
