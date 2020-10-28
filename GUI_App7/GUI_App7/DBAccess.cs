@@ -18,7 +18,8 @@ namespace GUI_App7
 
         // TRY EACH OF THESE
         //private static string strConnString = "Data Source=MAIN-PC;Initial Catalog=Fitness App;User ID=sa;Password=masterchief2020";
-        private static string strConnString = "Data Source=tcp:47.151.20.13;Initial Catalog=Fitness App;User ID=sa;Password=masterchief2020";
+        //private static string strConnString = "Data Source=tcp:47.151.20.13;Initial Catalog=Fitness App;User ID=sa;Password=masterchief2020";
+        private static string strConnString = "Data Source=47.151.20.13, 1433\\SQL;Initial Catalog=Fitness App;User ID=sa;Password=masterchief2020";
 
 
 
