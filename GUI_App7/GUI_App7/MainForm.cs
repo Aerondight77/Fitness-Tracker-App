@@ -138,7 +138,8 @@ namespace GUI_App7
         // Fix later on.
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new LoginForm().Show();
+            this.Hide();
         }
     }
 }

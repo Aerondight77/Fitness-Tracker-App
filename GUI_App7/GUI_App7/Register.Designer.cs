@@ -37,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.txtLastName = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPassword1 = new System.Windows.Forms.TextBox();
             this.txtPassword2 = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -85,9 +85,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
             this.label4.Location = new System.Drawing.Point(19, 209);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 24);
+            this.label4.Size = new System.Drawing.Size(102, 24);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Email:";
+            this.label4.Text = "Username:";
             // 
             // label5
             // 
@@ -129,15 +129,15 @@
             this.txtLastName.Size = new System.Drawing.Size(142, 21);
             this.txtLastName.TabIndex = 7;
             // 
-            // txtEmail
+            // txtUsername
             // 
-            this.txtEmail.BackColor = System.Drawing.Color.DarkGray;
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
-            this.txtEmail.Location = new System.Drawing.Point(128, 213);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(143, 20);
-            this.txtEmail.TabIndex = 7;
+            this.txtUsername.BackColor = System.Drawing.Color.DarkGray;
+            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
+            this.txtUsername.Location = new System.Drawing.Point(128, 213);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(143, 20);
+            this.txtUsername.TabIndex = 7;
             // 
             // txtPassword1
             // 
@@ -240,7 +240,7 @@
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.txtPassword2);
             this.Controls.Add(this.txtPassword1);
-            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label6);
@@ -270,7 +270,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.TextBox txtLastName;
-        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.TextBox txtPassword1;
         private System.Windows.Forms.TextBox txtPassword2;
         private System.Windows.Forms.Button btnRegister;
