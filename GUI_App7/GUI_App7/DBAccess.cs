@@ -16,7 +16,8 @@ namespace GUI_App7
         private static SqlDataAdapter adapter = new SqlDataAdapter();
         public SqlTransaction DbTran;
 
-        private static string strConnString = "Data Source=MAIN-PC;Initial Catalog=\"Fitness App\";Integrated Security=True";
+        //private static string strConnString = "Data Source=MAIN-PC;Initial Catalog=\"Fitness App\";Integrated Security=True";
+        private static string strConnString = "Data Source=MAIN-PC;Initial Catalog=\"Fitness App\";User ID=sa;Password=masterchief2020";
 
 
 
