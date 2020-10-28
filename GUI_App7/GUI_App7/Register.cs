@@ -17,13 +17,19 @@ namespace GUI_App7
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-            new MainForm().Show();
+            new LoginForm().Show();
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            new LoginForm().Show();
+            this.Hide();
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

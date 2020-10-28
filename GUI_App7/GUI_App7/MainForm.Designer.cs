@@ -33,7 +33,7 @@
             this.panelNav = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnProg = new System.Windows.Forms.Button();
             this.btnSummary = new System.Windows.Forms.Button();
             this.btnProfile = new System.Windows.Forms.Button();
@@ -57,7 +57,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.panelNav);
-            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnProg);
             this.panel1.Controls.Add(this.btnSummary);
             this.panel1.Controls.Add(this.btnProfile);
@@ -101,29 +101,29 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
-            // button4
+            // btnLogout
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(0, 471);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 42);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Logout";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.button4.UseVisualStyleBackColor = true;
-          //  this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
+            this.btnLogout.Location = new System.Drawing.Point(0, 471);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(186, 42);
+            this.btnLogout.TabIndex = 4;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnProg
             // 
             this.btnProg.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProg.FlatAppearance.BorderSize = 0;
             this.btnProg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProg.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnProg.Image = ((System.Drawing.Image)(resources.GetObject("btnProg.Image")));
             this.btnProg.Location = new System.Drawing.Point(0, 282);
@@ -141,7 +141,7 @@
             this.btnSummary.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSummary.FlatAppearance.BorderSize = 0;
             this.btnSummary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSummary.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSummary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSummary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnSummary.Image = ((System.Drawing.Image)(resources.GetObject("btnSummary.Image")));
             this.btnSummary.Location = new System.Drawing.Point(0, 240);
@@ -159,7 +159,7 @@
             this.btnProfile.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnProfile.FlatAppearance.BorderSize = 0;
             this.btnProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnProfile.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.Location = new System.Drawing.Point(0, 198);
@@ -177,7 +177,7 @@
             this.BtnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnDashboard.FlatAppearance.BorderSize = 0;
             this.BtnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDashboard.Font = new System.Drawing.Font("Maiandra GD", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.BtnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("BtnDashboard.Image")));
             this.BtnDashboard.Location = new System.Drawing.Point(0, 156);
@@ -207,11 +207,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Gray;
             this.label5.Location = new System.Drawing.Point(45, 124);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 16);
+            this.label5.Size = new System.Drawing.Size(105, 15);
             this.label5.TabIndex = 3;
             this.label5.Text = "Welcome Back!";
             // 
@@ -290,7 +290,7 @@
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
             // 
-            // Form2
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -304,7 +304,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(1);
-            this.Name = "Form2";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -326,7 +326,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnDashboard;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnProg;
         private System.Windows.Forms.Button btnSummary;
         private System.Windows.Forms.Button btnProfile;
