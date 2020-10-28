@@ -37,7 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtUsernameLogin = new System.Windows.Forms.TextBox();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -50,11 +50,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Bauhaus 93", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(148)))), ((int)(((byte)(184)))));
             this.label1.Location = new System.Drawing.Point(26, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 54);
+            this.label1.Size = new System.Drawing.Size(279, 55);
             this.label1.TabIndex = 1;
             this.label1.Text = "WELCOME";
             // 
@@ -134,17 +134,17 @@
             this.label3.Text = "Exit";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
-            // txtUsername
+            // txtUsernameLogin
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.DarkGray;
-            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
-            this.txtUsername.Location = new System.Drawing.Point(66, 217);
-            this.txtUsername.Multiline = true;
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(205, 24);
-            this.txtUsername.TabIndex = 6;
+            this.txtUsernameLogin.BackColor = System.Drawing.Color.DarkGray;
+            this.txtUsernameLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsernameLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsernameLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
+            this.txtUsernameLogin.Location = new System.Drawing.Point(66, 217);
+            this.txtUsernameLogin.Multiline = true;
+            this.txtUsernameLogin.Name = "txtUsernameLogin";
+            this.txtUsernameLogin.Size = new System.Drawing.Size(205, 24);
+            this.txtUsernameLogin.TabIndex = 6;
             // 
             // txtPassword
             // 
@@ -194,7 +194,7 @@
             this.ClientSize = new System.Drawing.Size(545, 452);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtUsernameLogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
@@ -226,7 +226,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtUsernameLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button2;
