@@ -20,8 +20,10 @@ namespace GUI_App7
         private void SummaryPage_Click(object sender, EventArgs e)
         {
             //this opens a new window. NEED it to go to the summary tab, not a new window. FIX!
-            SummaryForm myProfileForm_Vrb = new SummaryForm();
-            myProfileForm_Vrb.Show();
+
+            // The summary part is supposed to be static, the information here is supposed to be a quick view of what's in the other tabs. -Bailey
+            // SummaryForm myProfileForm_Vrb = new SummaryForm();
+            // myProfileForm_Vrb.Show();
 
         }
     }

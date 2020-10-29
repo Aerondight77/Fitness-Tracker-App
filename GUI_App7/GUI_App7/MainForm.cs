@@ -45,7 +45,7 @@ namespace GUI_App7
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            lblFirstName.Text = LoginForm.firstName;
         }
 
         private void BtnDashboard_Click(object sender, EventArgs e)
@@ -140,6 +140,11 @@ namespace GUI_App7
         {
             new LoginForm().Show();
             this.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

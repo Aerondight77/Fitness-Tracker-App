@@ -71,7 +71,7 @@ namespace GUI_App7
 
                 int row = objDBAccess.executeQuery(insertCommand);
 
-                // If it works, send the user to the login form.
+                // If it works, send the user back to the login form.
                 if (row == 1)
                 {
                     new LoginForm().Show();
