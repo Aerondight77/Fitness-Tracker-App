@@ -45,6 +45,7 @@
             this.lbITitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
+            this.btn_Weight = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btn_Weight);
             this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnProg);
@@ -71,10 +73,11 @@
             this.panelNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.panelNav.Controls.Add(this.label2);
             this.panelNav.Controls.Add(this.label1);
-            this.panelNav.Location = new System.Drawing.Point(0, 198);
+            this.panelNav.Location = new System.Drawing.Point(0, 81);
             this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(3, 100);
+            this.panelNav.Size = new System.Drawing.Size(5, 32);
             this.panelNav.TabIndex = 3;
+            this.panelNav.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
@@ -110,7 +113,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(186, 42);
             this.btnLogout.TabIndex = 4;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "Log Out";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -239,9 +242,9 @@
             this.lbITitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(161)))), ((int)(((byte)(176)))));
             this.lbITitle.Location = new System.Drawing.Point(201, 9);
             this.lbITitle.Name = "lbITitle";
-            this.lbITitle.Size = new System.Drawing.Size(163, 32);
+            this.lbITitle.Size = new System.Drawing.Size(255, 32);
             this.lbITitle.TabIndex = 3;
-            this.lbITitle.Text = "Dashboard";
+            this.lbITitle.Text = "Today\'s Summary";
             // 
             // button1
             // 
@@ -263,6 +266,24 @@
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
+            // 
+            // btn_Weight
+            // 
+            this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Weight.FlatAppearance.BorderSize = 0;
+            this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Weight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_Weight.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight.Image")));
+            this.btn_Weight.Location = new System.Drawing.Point(0, 243);
+            this.btn_Weight.Name = "btn_Weight";
+            this.btn_Weight.Size = new System.Drawing.Size(186, 42);
+            this.btn_Weight.TabIndex = 5;
+            this.btn_Weight.Text = "Weight/BMI";
+            this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Weight.UseVisualStyleBackColor = true;
+            this.btn_Weight.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Weight.Leave += new System.EventHandler(this.btnWeight_Leave);
             // 
             // MainForm
             // 
@@ -308,6 +329,7 @@
         private System.Windows.Forms.Label lbITitle;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel PnlFormLoader;
+        private System.Windows.Forms.Button btn_Weight;
     }
 }
 

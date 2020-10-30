@@ -106,6 +106,12 @@
     <Compile Include="SummaryForm.Designer.cs">
       <DependentUpon>SummaryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WeightForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeightForm.Designer.cs">
+      <DependentUpon>WeightForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SummaryForm.resx">
       <DependentUpon>SummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeightForm.resx">
+      <DependentUpon>WeightForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -146,5 +146,24 @@ namespace GUI_App7
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnProg.Height;
+            panelNav.Top = btnProg.Top;
+            btnProg.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Weight/BMI";
+            this.PnlFormLoader.Controls.Clear();
+            WeightForm myProfileForm_Vrb = new WeightForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWeight_Leave(object sender, EventArgs e)
+        {
+            btnProg.BackColor = Color.FromArgb(255, 255, 255);
+        }
     }
 }

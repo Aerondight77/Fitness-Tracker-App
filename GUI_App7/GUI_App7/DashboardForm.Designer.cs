@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.txtCalBurned = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.SummaryPage = new System.Windows.Forms.Button();
@@ -39,9 +42,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,8 +64,39 @@
             this.panel4.Controls.Add(this.label11);
             this.panel4.Location = new System.Drawing.Point(12, 18);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(719, 426);
+            this.panel4.Size = new System.Drawing.Size(719, 436);
             this.panel4.TabIndex = 13;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(186, 280);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(107, 20);
+            this.textBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label1.Location = new System.Drawing.Point(28, 297);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 18);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "weight:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label5.Location = new System.Drawing.Point(28, 279);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 18);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Recent measured";
             // 
             // txtCalBurned
             // 
@@ -89,11 +120,11 @@
             // 
             // SummaryPage
             // 
-            this.SummaryPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
+            this.SummaryPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.SummaryPage.FlatAppearance.BorderSize = 0;
             this.SummaryPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SummaryPage.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
-            this.SummaryPage.ForeColor = System.Drawing.Color.White;
+            this.SummaryPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.SummaryPage.Location = new System.Drawing.Point(270, 348);
             this.SummaryPage.Name = "SummaryPage";
             this.SummaryPage.Size = new System.Drawing.Size(173, 38);
@@ -172,37 +203,6 @@
             this.label11.Size = new System.Drawing.Size(116, 18);
             this.label11.TabIndex = 0;
             this.label11.Text = "Calorie intake:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(28, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 18);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Recent measured";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(28, 297);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 18);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "weight:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(186, 280);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
-            this.textBox1.TabIndex = 8;
             // 
             // DashboardForm
             // 

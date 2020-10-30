@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtGender = new System.Windows.Forms.TextBox();
+            this.txtDOB = new System.Windows.Forms.TextBox();
+            this.txtHeightIN = new System.Windows.Forms.TextBox();
+            this.txtHeightFT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -42,36 +42,19 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox5);
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.txtAge);
+            this.panel4.Controls.Add(this.txtGender);
+            this.panel4.Controls.Add(this.txtDOB);
+            this.panel4.Controls.Add(this.txtHeightIN);
+            this.panel4.Controls.Add(this.txtHeightFT);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
@@ -85,45 +68,45 @@
             this.panel4.Size = new System.Drawing.Size(374, 383);
             this.panel4.TabIndex = 10;
             // 
-            // textBox4
+            // txtAge
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 273);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(129, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtAge.Location = new System.Drawing.Point(84, 273);
+            this.txtAge.Multiline = true;
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(129, 20);
+            this.txtAge.TabIndex = 1;
             // 
-            // textBox3
+            // txtGender
             // 
-            this.textBox3.Location = new System.Drawing.Point(83, 203);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(130, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtGender.Location = new System.Drawing.Point(83, 203);
+            this.txtGender.Multiline = true;
+            this.txtGender.Name = "txtGender";
+            this.txtGender.Size = new System.Drawing.Size(130, 20);
+            this.txtGender.TabIndex = 1;
             // 
-            // textBox2
+            // txtDOB
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 133);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(129, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtDOB.Location = new System.Drawing.Point(84, 133);
+            this.txtDOB.Multiline = true;
+            this.txtDOB.Name = "txtDOB";
+            this.txtDOB.Size = new System.Drawing.Size(129, 20);
+            this.txtDOB.TabIndex = 1;
             // 
-            // textBox5
+            // txtHeightIN
             // 
-            this.textBox5.Location = new System.Drawing.Point(165, 67);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(48, 20);
-            this.textBox5.TabIndex = 1;
+            this.txtHeightIN.Location = new System.Drawing.Point(165, 67);
+            this.txtHeightIN.Multiline = true;
+            this.txtHeightIN.Name = "txtHeightIN";
+            this.txtHeightIN.Size = new System.Drawing.Size(48, 20);
+            this.txtHeightIN.TabIndex = 1;
             // 
-            // textBox6
+            // txtHeightFT
             // 
-            this.textBox6.Location = new System.Drawing.Point(83, 69);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(48, 20);
-            this.textBox6.TabIndex = 1;
+            this.txtHeightFT.Location = new System.Drawing.Point(83, 69);
+            this.txtHeightFT.Multiline = true;
+            this.txtHeightFT.Name = "txtHeightFT";
+            this.txtHeightFT.Size = new System.Drawing.Size(48, 20);
+            this.txtHeightFT.TabIndex = 1;
             // 
             // label7
             // 
@@ -213,195 +196,20 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Personal Info";
             // 
-            // button1
+            // btnUpdate
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.button1.Location = new System.Drawing.Point(280, 413);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 41);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox7);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.textBox10);
-            this.panel2.Controls.Add(this.textBox9);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label24);
-            this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.label22);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(386, 12);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(351, 383);
-            this.panel2.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(10, 78);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 18);
-            this.label6.TabIndex = 15;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(47, 12);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(160, 29);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "Weekly Goal";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(164, 254);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(107, 20);
-            this.textBox10.TabIndex = 1;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(164, 146);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(107, 20);
-            this.textBox9.TabIndex = 1;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(164, 79);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(107, 20);
-            this.textBox1.TabIndex = 1;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label24.Location = new System.Drawing.Point(10, 256);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(101, 18);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Weight goal:";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label21.Location = new System.Drawing.Point(8, 148);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(125, 18);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "Current weight:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label22.Location = new System.Drawing.Point(276, 253);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(33, 18);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "lbs.";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(10, 69);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 18);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Last measured";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label10.Location = new System.Drawing.Point(276, 145);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(33, 18);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "lbs.";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label2.Location = new System.Drawing.Point(10, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 18);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "weight:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label4.Location = new System.Drawing.Point(276, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 18);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "lbs.";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(164, 202);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(107, 20);
-            this.textBox7.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(276, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 18);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "lbs.";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(10, 205);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 18);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Amount changed:";
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnUpdate.Location = new System.Drawing.Point(280, 413);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(178, 41);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.button1_Click);
             // 
             // MyProfileForm
             // 
@@ -409,16 +217,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(743, 466);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MyProfileForm";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.MyProfileForm_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -426,11 +232,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtGender;
+        private System.Windows.Forms.TextBox txtDOB;
+        private System.Windows.Forms.TextBox txtHeightIN;
+        private System.Windows.Forms.TextBox txtHeightFT;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -439,22 +245,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
