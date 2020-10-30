@@ -35,7 +35,7 @@ namespace GUI_App7
             panelNav.Left = BtnDashboard.Left;
             BtnDashboard.BackColor = Color.FromArgb(245, 245, 245);
 
-            lbITitle.Text = "Dashboard";
+            lbITitle.Text = "Today's Summary";
             this.PnlFormLoader.Controls.Clear();
             DashboardForm dashboardForm_Vrb = new DashboardForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             dashboardForm_Vrb.FormBorderStyle = FormBorderStyle.None;
@@ -84,7 +84,7 @@ namespace GUI_App7
             panelNav.Top = btnSummary.Top;
             btnSummary.BackColor = Color.FromArgb(245, 245, 245);
 
-            lbITitle.Text = "Summary";
+            lbITitle.Text = "To-Do List";
             this.PnlFormLoader.Controls.Clear();
             SummaryForm myProfileForm_Vrb = new SummaryForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;

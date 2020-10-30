@@ -43,7 +43,6 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lbITitle = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -146,7 +145,7 @@
             this.btnSummary.Name = "btnSummary";
             this.btnSummary.Size = new System.Drawing.Size(186, 42);
             this.btnSummary.TabIndex = 4;
-            this.btnSummary.Text = "Summary";
+            this.btnSummary.Text = "To-Do List";
             this.btnSummary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnSummary.UseVisualStyleBackColor = true;
             this.btnSummary.Click += new System.EventHandler(this.btnSummary_Click);
@@ -182,7 +181,7 @@
             this.BtnDashboard.Name = "BtnDashboard";
             this.BtnDashboard.Size = new System.Drawing.Size(186, 42);
             this.BtnDashboard.TabIndex = 4;
-            this.BtnDashboard.Text = "Dashboard";
+            this.BtnDashboard.Text = "Summary";
             this.BtnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.BtnDashboard.UseVisualStyleBackColor = true;
             this.BtnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
@@ -244,19 +243,6 @@
             this.lbITitle.TabIndex = 3;
             this.lbITitle.Text = "Dashboard";
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(79)))), ((int)(((byte)(99)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(157)))), ((int)(((byte)(157)))));
-            this.textBox1.Location = new System.Drawing.Point(574, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 29);
-            this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Search";
-            // 
             // button1
             // 
             this.button1.FlatAppearance.BorderSize = 0;
@@ -286,7 +272,6 @@
             this.ClientSize = new System.Drawing.Size(929, 513);
             this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lbITitle);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -321,7 +306,6 @@
         private System.Windows.Forms.Label lblFirstName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbITitle;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel PnlFormLoader;
     }
