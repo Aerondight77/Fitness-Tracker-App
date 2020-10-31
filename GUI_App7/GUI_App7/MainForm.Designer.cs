@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Weight = new System.Windows.Forms.Button();
             this.panelNav = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +46,6 @@
             this.lbITitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
-            this.btn_Weight = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -67,6 +67,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 513);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_Weight
+            // 
+            this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Weight.FlatAppearance.BorderSize = 0;
+            this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Weight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_Weight.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight.Image")));
+            this.btn_Weight.Location = new System.Drawing.Point(0, 243);
+            this.btn_Weight.Name = "btn_Weight";
+            this.btn_Weight.Size = new System.Drawing.Size(186, 42);
+            this.btn_Weight.TabIndex = 5;
+            this.btn_Weight.Text = "Weight";
+            this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Weight.UseVisualStyleBackColor = true;
+            this.btn_Weight.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Weight.Leave += new System.EventHandler(this.btnWeight_Leave);
             // 
             // panelNav
             // 
@@ -266,24 +284,6 @@
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
-            // 
-            // btn_Weight
-            // 
-            this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Weight.FlatAppearance.BorderSize = 0;
-            this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Weight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btn_Weight.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight.Image")));
-            this.btn_Weight.Location = new System.Drawing.Point(0, 243);
-            this.btn_Weight.Name = "btn_Weight";
-            this.btn_Weight.Size = new System.Drawing.Size(186, 42);
-            this.btn_Weight.TabIndex = 5;
-            this.btn_Weight.Text = "Weight/BMI";
-            this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_Weight.UseVisualStyleBackColor = true;
-            this.btn_Weight.Click += new System.EventHandler(this.button2_Click);
-            this.btn_Weight.Leave += new System.EventHandler(this.btnWeight_Leave);
             // 
             // MainForm
             // 

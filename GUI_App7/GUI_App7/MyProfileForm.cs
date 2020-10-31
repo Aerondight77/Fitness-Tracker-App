@@ -53,7 +53,7 @@ namespace GUI_App7
             else
             {
                 string query = "Update Login_Table SET Gender = '" + @gender + "', Age = '" + @formAge + "', DOB = '" + @dob + "', HeightFT = '" + @heightFT +
-                    "', HeightIN = '" + @heightIN + "' where Username = '" + LoginForm.username + "'";
+                    "', HeightIN = '" + @heightIN + "' where ID = '" + LoginForm.id + "'";
 
                 SqlCommand updateCommand = new SqlCommand(query);
 
@@ -70,6 +70,10 @@ namespace GUI_App7
                     // Message for debug purposes. [MIGHT NEED TO REMOVE LATER ON]
                     MessageBox.Show("Personal info updated in DB.");
                 }
+                else
+                {
+                    MessageBox.Show("Error occured. Please check your inputs.");
+                }
             }
         }
 
@@ -78,7 +82,7 @@ namespace GUI_App7
             int formAge, heightFT, heightIN;
             string dob, gender;
 
-            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN FROM Login_Table where Username = '" + LoginForm.username + "'";
+            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN FROM Login_Table where ID = '" + LoginForm.id + "'";
 
             SqlCommand getCommand = new SqlCommand(query);
 

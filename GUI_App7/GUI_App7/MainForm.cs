@@ -153,7 +153,7 @@ namespace GUI_App7
             panelNav.Top = btnProg.Top;
             btnProg.BackColor = Color.FromArgb(245, 245, 245);
 
-            lbITitle.Text = "Weight/BMI";
+            lbITitle.Text = "Weight";
             this.PnlFormLoader.Controls.Clear();
             WeightForm myProfileForm_Vrb = new WeightForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
