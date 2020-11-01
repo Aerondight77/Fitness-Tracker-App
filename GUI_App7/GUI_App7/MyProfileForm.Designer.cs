@@ -30,6 +30,7 @@
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.txtAge = new System.Windows.Forms.TextBox();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.txtGender = new System.Windows.Forms.TextBox();
             this.txtDOB = new System.Windows.Forms.TextBox();
             this.txtHeightIN = new System.Windows.Forms.TextBox();
@@ -42,11 +43,10 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnUpdate2 = new System.Windows.Forms.Button();
-            this.lblBMI = new System.Windows.Forms.Label();
             this.txtBMI = new System.Windows.Forms.TextBox();
+            this.lblBMI = new System.Windows.Forms.Label();
+            this.btnUpdate2 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -81,6 +81,21 @@
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(129, 20);
             this.txtAge.TabIndex = 1;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnUpdate.Location = new System.Drawing.Point(83, 360);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(178, 41);
+            this.btnUpdate.TabIndex = 11;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtGender
             // 
@@ -202,21 +217,6 @@
             this.label19.TabIndex = 0;
             this.label19.Text = "Personal Info";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnUpdate.FlatAppearance.BorderSize = 0;
-            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnUpdate.Location = new System.Drawing.Point(83, 360);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(178, 41);
-            this.btnUpdate.TabIndex = 11;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
@@ -227,6 +227,31 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(343, 442);
             this.panel1.TabIndex = 12;
+            // 
+            // txtBMI
+            // 
+            this.txtBMI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtBMI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBMI.Enabled = false;
+            this.txtBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBMI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.txtBMI.Location = new System.Drawing.Point(83, 12);
+            this.txtBMI.Multiline = true;
+            this.txtBMI.Name = "txtBMI";
+            this.txtBMI.Size = new System.Drawing.Size(207, 55);
+            this.txtBMI.TabIndex = 23;
+            this.txtBMI.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblBMI
+            // 
+            this.lblBMI.AutoSize = true;
+            this.lblBMI.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBMI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.lblBMI.Location = new System.Drawing.Point(34, 23);
+            this.lblBMI.Name = "lblBMI";
+            this.lblBMI.Size = new System.Drawing.Size(43, 18);
+            this.lblBMI.TabIndex = 13;
+            this.lblBMI.Text = "BMI:";
             // 
             // btnUpdate2
             // 
@@ -241,27 +266,6 @@
             this.btnUpdate2.TabIndex = 12;
             this.btnUpdate2.Text = "Update";
             this.btnUpdate2.UseVisualStyleBackColor = false;
-            // 
-            // lblBMI
-            // 
-            this.lblBMI.AutoSize = true;
-            this.lblBMI.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBMI.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.lblBMI.Location = new System.Drawing.Point(28, 33);
-            this.lblBMI.Name = "lblBMI";
-            this.lblBMI.Size = new System.Drawing.Size(43, 18);
-            this.lblBMI.TabIndex = 13;
-            this.lblBMI.Text = "BMI:";
-            // 
-            // txtBMI
-            // 
-            this.txtBMI.Enabled = false;
-            this.txtBMI.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBMI.Location = new System.Drawing.Point(83, 12);
-            this.txtBMI.Multiline = true;
-            this.txtBMI.Name = "txtBMI";
-            this.txtBMI.Size = new System.Drawing.Size(207, 67);
-            this.txtBMI.TabIndex = 23;
             // 
             // MyProfileForm
             // 

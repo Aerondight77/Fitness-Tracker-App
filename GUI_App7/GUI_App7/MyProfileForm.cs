@@ -16,6 +16,7 @@ namespace GUI_App7
     {
         DBAccess objDBAccess = new DBAccess();
         DataTable dtLogin_Table = new DataTable();
+        DataTable dtLogin_Table2 = new DataTable();
 
         public MyProfileForm()
         {
@@ -29,6 +30,7 @@ namespace GUI_App7
             int heightIN = int.Parse(txtHeightIN.Text);
             string dob = txtDOB.Text;
             string gender = txtGender.Text;
+            double bmi;
 
             if (heightFT.Equals(0))
             {
@@ -52,8 +54,11 @@ namespace GUI_App7
             }
             else
             {
+                int heightinINOnly = (heightFT * 12) + heightIN;
+                bmi = (getWeight() * 703) / (heightinINOnly * heightinINOnly);
+                
                 string query = "Update Login_Table SET Gender = '" + @gender + "', Age = '" + @formAge + "', DOB = '" + @dob + "', HeightFT = '" + @heightFT +
-                    "', HeightIN = '" + @heightIN + "' where ID = '" + LoginForm.id + "'";
+                    "', HeightIN = '" + @heightIN + "', BMI = '" + @bmi + "' where ID = '" + LoginForm.id + "'";
 
                 SqlCommand updateCommand = new SqlCommand(query);
 
@@ -62,6 +67,7 @@ namespace GUI_App7
                 updateCommand.Parameters.AddWithValue("@dob", @dob);
                 updateCommand.Parameters.AddWithValue("@heightFT", @heightFT);
                 updateCommand.Parameters.AddWithValue("@heightIN", @heightIN);
+                updateCommand.Parameters.AddWithValue("@bmi", @bmi);
 
                 int row = objDBAccess.executeQuery(updateCommand);
 
@@ -69,6 +75,9 @@ namespace GUI_App7
                 {
                     // Message for debug purposes. [MIGHT NEED TO REMOVE LATER ON]
                     MessageBox.Show("Personal info updated in DB.");
+
+                    txtBMI.Clear();
+                    txtBMI.AppendText(bmi.ToString());
                 }
                 else
                 {
@@ -105,5 +114,33 @@ namespace GUI_App7
                 txtAge.AppendText(formAge.ToString());
             }
         }
+
+        public int getWeight()
+        {
+            int weightVal;
+
+            string query = "SELECT Weight FROM Login_Table where ID = '" + LoginForm.id + "'";
+            SqlCommand getCommand = new SqlCommand(query);
+
+            objDBAccess.readDatathroughAdapter(query, dtLogin_Table2);
+
+            if (dtLogin_Table2.Rows.Count == 1)
+            {
+                weightVal = int.Parse(dtLogin_Table2.Rows[0]["Weight"].ToString());
+                objDBAccess.closeConn();
+                return weightVal;
+            }
+            else
+            {
+                MessageBox.Show("Unable to get weight from DB. (MyProfileForm)");
+                return 0;
+            }
+
+        }
+
+        //public void insertBMItoDB()
+        //{
+
+        //}
     }
 }

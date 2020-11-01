@@ -13,8 +13,10 @@ namespace GUI_App7
 {
     public partial class WeightForm : Form
     {
+        public static int weight;
         DBAccess objDBAccess = new DBAccess();
         DataTable dtLogin_Table = new DataTable();
+        DataTable dtLogin_Table2 = new DataTable();
 
         public WeightForm()
         {
@@ -35,6 +37,7 @@ namespace GUI_App7
             {
                 int currWeight = int.Parse(txtCurrWeight.Text);
                 int weightGoal = int.Parse(txtWeightGoal.Text);
+                weight = currWeight;
                 string query = "Update Login_Table SET Weight = '" + @currWeight + "', WeightGoal = '" + @weightGoal + "' where ID = '" + LoginForm.id + "'";
 
                 SqlCommand updateCommand = new SqlCommand(query);
@@ -52,25 +55,9 @@ namespace GUI_App7
                     txtWeightDiff.Clear();
                     int diff = Math.Abs(weightGoal - currWeight);
                     txtWeightDiff.AppendText(diff.ToString());
-                    txtAmtChangedWeight.Clear();
-                    diff = Math.Abs(getWeight() - currWeight);
-                    txtAmtChangedWeight.AppendText(diff.ToString());
-                    //string query2 = "SELECT Weight FROM Login_Table where ID = '" + LoginForm.id + "'";
-                    //SqlCommand getCommand = new SqlCommand(query2);
-                    //objDBAccess.readDatathroughAdapter(query2, dtLogin_Table);
-                    //if (dtLogin_Table.Rows.Count == 1)
-                    //{
-                        //int lastWeight = int.Parse(dtLogin_Table.Rows[0]["Weight"].ToString());
-                        //objDBAccess.closeConn();
-                        //int weightChange = lastWeight - currWeight;
-                        //txtAmtChangedWeight.Clear();
-                        //txtAmtChangedWeight.AppendText(weightChange.ToString());
-                    //}
-                    //else
-                    //{
-                        // Debug purposes.
-                        // MessageBox.Show("Unable to get difference.");
-                    //}
+                    //txtAmtChangedWeight.Clear();
+                    //diff = Math.Abs(getWeight() - currWeight);
+                    //txtAmtChangedWeight.AppendText(diff.ToString());
                 }
                 else
                 {
@@ -101,23 +88,22 @@ namespace GUI_App7
             }
         }
 
-        // I have no idea why it doesn't work.
         public int getWeight()
         {
             string query = "SELECT Weight FROM Login_Table where ID = '" + LoginForm.id + "'";
             SqlCommand getCommand = new SqlCommand(query);
-            objDBAccess.readDatathroughAdapter(query, dtLogin_Table);
+            objDBAccess.readDatathroughAdapter(query, dtLogin_Table2);
             int weightVal;
-            if (dtLogin_Table.Rows.Count == 1)
+            if (dtLogin_Table2.Rows.Count == 1)
             {
-                weightVal = int.Parse(dtLogin_Table.Rows[0]["Weight"].ToString());
+                weightVal = int.Parse(dtLogin_Table2.Rows[0]["Weight"].ToString());
                 objDBAccess.closeConn();
                 return weightVal;
             }
             else
             {
                 // Debug purposes.
-                MessageBox.Show("Unable to get difference.");
+                MessageBox.Show("Unable to get weight. (WeightForm)");
                 return 0;
             }
         }
