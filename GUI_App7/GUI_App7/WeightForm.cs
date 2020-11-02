@@ -13,7 +13,6 @@ namespace GUI_App7
 {
     public partial class WeightForm : Form
     {
-        public static int weight;
         DBAccess objDBAccess = new DBAccess();
         DataTable dtLogin_Table = new DataTable();
         DataTable dtLogin_Table2 = new DataTable();
@@ -37,7 +36,6 @@ namespace GUI_App7
             {
                 int currWeight = int.Parse(txtCurrWeight.Text);
                 int weightGoal = int.Parse(txtWeightGoal.Text);
-                weight = currWeight;
                 string query = "Update Login_Table SET Weight = '" + @currWeight + "', WeightGoal = '" + @weightGoal + "' where ID = '" + LoginForm.id + "'";
 
                 SqlCommand updateCommand = new SqlCommand(query);

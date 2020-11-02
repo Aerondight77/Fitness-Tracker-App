@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GUI_App7
 {
@@ -22,19 +23,40 @@ namespace GUI_App7
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (txtWentSleep.Text.Equals(""))
+            //if (txtWentSleep.Text.Equals(""))
+            //{
+               //MessageBox.Show("Please enter the time that you went to sleep.");
+            //}
+            //else if (txtWokeUp.Text.Equals(""))
+            //{
+                //MessageBox.Show("Please enter the time that you woke up.");
+            //}
+            //else
+            //{
+                //int sleepStart = int.Parse(txtWentSleep.Text);
+                //int sleepEnd = int.Parse(txtWokeUp.Text);
+
+                int hourStart = dateTimePickerSleep.Value.Hour;
+                int hourEnd = dateTimePickerWake.Value.Hour;
+
+            int timeSlept = Math.Abs(hourStart - hourEnd);
+            string query = "Update Login_Table SET Sleep = '" + @timeSlept + "' where ID = '" + LoginForm.id + "'";
+            SqlCommand updateCommand = new SqlCommand(query);
+
+            updateCommand.Parameters.AddWithValue("@timeSlept", @timeSlept);
+            int row = objDBAccess.executeQuery(updateCommand);
+
+            if (row == 1)
             {
-                MessageBox.Show("Please enter the time that you went to sleep.");
-            }
-            else if (txtWokeUp.Text.Equals(""))
-            {
-                MessageBox.Show("Please enter the time that you woke up.");
+                txtTimeSlept.Clear();
+                txtTimeSlept.AppendText(timeSlept.ToString());
             }
             else
             {
-                int sleepStart = int.Parse(txtWentSleep.Text);
-                int sleepEnd = int.Parse(txtWokeUp.Text);
+                MessageBox.Show("Some error occurred.");
             }
+
+            //}
 
         }
     }
