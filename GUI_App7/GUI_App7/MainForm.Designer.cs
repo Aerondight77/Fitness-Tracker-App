@@ -46,6 +46,7 @@
             this.lbITitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
+            this.btnSleep = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -54,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnSleep);
             this.panel1.Controls.Add(this.btn_Weight);
             this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnLogout);
@@ -285,6 +287,24 @@
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
             // 
+            // btnSleep
+            // 
+            this.btnSleep.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSleep.FlatAppearance.BorderSize = 0;
+            this.btnSleep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSleep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSleep.Image = ((System.Drawing.Image)(resources.GetObject("btnSleep.Image")));
+            this.btnSleep.Location = new System.Drawing.Point(0, 285);
+            this.btnSleep.Name = "btnSleep";
+            this.btnSleep.Size = new System.Drawing.Size(186, 42);
+            this.btnSleep.TabIndex = 6;
+            this.btnSleep.Text = "Sleep";
+            this.btnSleep.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSleep.UseVisualStyleBackColor = true;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
+            this.btnSleep.Leave += new System.EventHandler(this.btnSleep_Leave);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,6 +350,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel PnlFormLoader;
         private System.Windows.Forms.Button btn_Weight;
+        private System.Windows.Forms.Button btnSleep;
     }
 }
 

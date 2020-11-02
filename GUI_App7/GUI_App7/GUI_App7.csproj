@@ -100,6 +100,12 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="SleepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SleepForm.Designer.cs">
+      <DependentUpon>SleepForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SummaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </Compile>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SleepForm.resx">
+      <DependentUpon>SleepForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SummaryForm.resx">
       <DependentUpon>SummaryForm.cs</DependentUpon>
