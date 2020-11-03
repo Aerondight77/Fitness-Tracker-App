@@ -112,6 +112,12 @@
     <Compile Include="SummaryForm.Designer.cs">
       <DependentUpon>SummaryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaterForm.Designer.cs">
+      <DependentUpon>WaterForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WeightForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SummaryForm.resx">
       <DependentUpon>SummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaterForm.resx">
+      <DependentUpon>WaterForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WeightForm.resx">
       <DependentUpon>WeightForm.cs</DependentUpon>
