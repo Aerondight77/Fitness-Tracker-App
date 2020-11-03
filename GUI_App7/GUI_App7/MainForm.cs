@@ -184,5 +184,24 @@ namespace GUI_App7
         {
             btnProg.BackColor = Color.FromArgb(255, 255, 255);
         }
+
+        private void btnWater_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnProg.Height;
+            panelNav.Top = btnProg.Top;
+            btnProg.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Daily Water Intake Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            WaterForm myProfileForm_Vrb = new WaterForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWater_Leave(object sender, EventArgs e)
+        {
+            btnProg.BackColor = Color.FromArgb(255, 255, 255);
+        }
     }
 }
