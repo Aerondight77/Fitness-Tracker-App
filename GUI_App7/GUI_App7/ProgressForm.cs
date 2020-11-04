@@ -23,20 +23,20 @@ namespace GUI_App7
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int goal = int.Parse(txtWeeklyGoal.Text);
+            float goal = float.Parse(txtWeeklyGoal.Text);
             if (goal == 1 || goal == 0)
             {
                 MessageBox.Show("Please enter a valid Weekly Goal value.");
             }
             else
             {
-                int mon = int.Parse(txtBurnedMon.Text);
-                int tues = int.Parse(txtBurnedTues.Text);
-                int wed = int.Parse(txtBurnedWed.Text);
-                int thur = int.Parse(txtBurnedThu.Text);
-                int fri = int.Parse(txtBurnedFri.Text);
-                int sat = int.Parse(txtBurnedSat.Text);
-                int sun = int.Parse(txtBurnedSun.Text);
+                float mon = float.Parse(txtBurnedMon.Text);
+                float tues = float.Parse(txtBurnedTues.Text);
+                float wed = float.Parse(txtBurnedWed.Text);
+                float thur = float.Parse(txtBurnedThu.Text);
+                float fri = float.Parse(txtBurnedFri.Text);
+                float sat = float.Parse(txtBurnedSat.Text);
+                float sun = float.Parse(txtBurnedSun.Text);
 
                 string query =
                     "Update Login_Table SET CalBurnedMon = '" + @mon + "', CalBurnedTue = '" + @tues + "', CalBurnedWed = '" + @wed + "', CalBurnedThur = '" + @thur +
@@ -57,11 +57,11 @@ namespace GUI_App7
                 int row = objDBAccess.executeQuery(updateCommand);
                 if (row == 1)
                 {
-                    int total = mon + tues + wed + thur + fri + sat + sun;
+                    float total = mon + tues + wed + thur + fri + sat + sun;
                     txtTotalCal.Clear();
                     txtTotalCal.AppendText(total.ToString());
                     // Keeps giving me either 0 or 100 for some reason. Please check. -Bailey.
-                    double percent = (total / goal) * 100;
+                    float percent = (total / goal) * 100;
                     txtPercent.Clear();
                     txtPercent.AppendText(percent.ToString());
                 }
@@ -101,7 +101,7 @@ namespace GUI_App7
                 txtBurnedSun.AppendText(sun.ToString());
                 txtWeeklyGoal.AppendText(goal.ToString());
 
-                int total = mon + tues + wed + thur + fri + sat + sun;
+                float total = mon + tues + wed + thur + fri + sat + sun;
                 //double percent = (total / goal) * 100;
 
                 txtTotalCal.AppendText(total.ToString());
