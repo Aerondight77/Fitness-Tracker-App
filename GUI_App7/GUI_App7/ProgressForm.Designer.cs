@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtBurnedSun = new System.Windows.Forms.TextBox();
+            this.txtBurnedSat = new System.Windows.Forms.TextBox();
+            this.txtBurnedFri = new System.Windows.Forms.TextBox();
+            this.txtBurnedThu = new System.Windows.Forms.TextBox();
+            this.txtBurnedTues = new System.Windows.Forms.TextBox();
+            this.txtBurnedWed = new System.Windows.Forms.TextBox();
+            this.txtBurnedMon = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -46,16 +46,17 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtPercent = new System.Windows.Forms.TextBox();
+            this.txtWeeklyGoal = new System.Windows.Forms.TextBox();
+            this.txtTotalCal = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,13 +65,13 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.Controls.Add(this.textBox12);
-            this.panel4.Controls.Add(this.textBox11);
-            this.panel4.Controls.Add(this.textBox4);
-            this.panel4.Controls.Add(this.textBox3);
-            this.panel4.Controls.Add(this.textBox2);
-            this.panel4.Controls.Add(this.textBox5);
-            this.panel4.Controls.Add(this.textBox6);
+            this.panel4.Controls.Add(this.txtBurnedSun);
+            this.panel4.Controls.Add(this.txtBurnedSat);
+            this.panel4.Controls.Add(this.txtBurnedFri);
+            this.panel4.Controls.Add(this.txtBurnedThu);
+            this.panel4.Controls.Add(this.txtBurnedTues);
+            this.panel4.Controls.Add(this.txtBurnedWed);
+            this.panel4.Controls.Add(this.txtBurnedMon);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.label9);
@@ -82,64 +83,64 @@
             this.panel4.Controls.Add(this.label19);
             this.panel4.Location = new System.Drawing.Point(12, 12);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(352, 427);
+            this.panel4.Size = new System.Drawing.Size(352, 442);
             this.panel4.TabIndex = 11;
             // 
-            // textBox12
+            // txtBurnedSun
             // 
-            this.textBox12.Location = new System.Drawing.Point(136, 381);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(174, 20);
-            this.textBox12.TabIndex = 1;
+            this.txtBurnedSun.Location = new System.Drawing.Point(136, 381);
+            this.txtBurnedSun.Multiline = true;
+            this.txtBurnedSun.Name = "txtBurnedSun";
+            this.txtBurnedSun.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedSun.TabIndex = 1;
             // 
-            // textBox11
+            // txtBurnedSat
             // 
-            this.textBox11.Location = new System.Drawing.Point(136, 340);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(174, 20);
-            this.textBox11.TabIndex = 1;
+            this.txtBurnedSat.Location = new System.Drawing.Point(136, 340);
+            this.txtBurnedSat.Multiline = true;
+            this.txtBurnedSat.Name = "txtBurnedSat";
+            this.txtBurnedSat.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedSat.TabIndex = 1;
             // 
-            // textBox4
+            // txtBurnedFri
             // 
-            this.textBox4.Location = new System.Drawing.Point(136, 293);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(174, 20);
-            this.textBox4.TabIndex = 1;
+            this.txtBurnedFri.Location = new System.Drawing.Point(136, 293);
+            this.txtBurnedFri.Multiline = true;
+            this.txtBurnedFri.Name = "txtBurnedFri";
+            this.txtBurnedFri.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedFri.TabIndex = 1;
             // 
-            // textBox3
+            // txtBurnedThu
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 249);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 20);
-            this.textBox3.TabIndex = 1;
+            this.txtBurnedThu.Location = new System.Drawing.Point(136, 249);
+            this.txtBurnedThu.Multiline = true;
+            this.txtBurnedThu.Name = "txtBurnedThu";
+            this.txtBurnedThu.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedThu.TabIndex = 1;
             // 
-            // textBox2
+            // txtBurnedTues
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 161);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(174, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtBurnedTues.Location = new System.Drawing.Point(136, 161);
+            this.txtBurnedTues.Multiline = true;
+            this.txtBurnedTues.Name = "txtBurnedTues";
+            this.txtBurnedTues.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedTues.TabIndex = 1;
             // 
-            // textBox5
+            // txtBurnedWed
             // 
-            this.textBox5.Location = new System.Drawing.Point(136, 204);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(174, 20);
-            this.textBox5.TabIndex = 1;
+            this.txtBurnedWed.Location = new System.Drawing.Point(136, 204);
+            this.txtBurnedWed.Multiline = true;
+            this.txtBurnedWed.Name = "txtBurnedWed";
+            this.txtBurnedWed.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedWed.TabIndex = 1;
             // 
-            // textBox6
+            // txtBurnedMon
             // 
-            this.textBox6.Location = new System.Drawing.Point(136, 117);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(174, 20);
-            this.textBox6.TabIndex = 1;
+            this.txtBurnedMon.Location = new System.Drawing.Point(136, 117);
+            this.txtBurnedMon.Multiline = true;
+            this.txtBurnedMon.Name = "txtBurnedMon";
+            this.txtBurnedMon.Size = new System.Drawing.Size(174, 20);
+            this.txtBurnedMon.TabIndex = 1;
             // 
             // label7
             // 
@@ -232,11 +233,11 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Poor Richard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(12, 12);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(147, 28);
+            this.label19.Size = new System.Drawing.Size(160, 29);
             this.label19.TabIndex = 0;
             this.label19.Text = "Workout Log";
             // 
@@ -244,9 +245,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.btnUpdate);
+            this.panel1.Controls.Add(this.txtPercent);
+            this.panel1.Controls.Add(this.txtWeeklyGoal);
+            this.panel1.Controls.Add(this.txtTotalCal);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label6);
@@ -256,32 +258,34 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Location = new System.Drawing.Point(379, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(352, 427);
+            this.panel1.Size = new System.Drawing.Size(352, 442);
             this.panel1.TabIndex = 11;
             // 
-            // textBox1
+            // txtPercent
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 258);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(75, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtPercent.Enabled = false;
+            this.txtPercent.Location = new System.Drawing.Point(92, 258);
+            this.txtPercent.Multiline = true;
+            this.txtPercent.Name = "txtPercent";
+            this.txtPercent.Size = new System.Drawing.Size(75, 20);
+            this.txtPercent.TabIndex = 1;
             // 
-            // textBox7
+            // txtWeeklyGoal
             // 
-            this.textBox7.Location = new System.Drawing.Point(164, 185);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(153, 20);
-            this.textBox7.TabIndex = 1;
+            this.txtWeeklyGoal.Location = new System.Drawing.Point(164, 185);
+            this.txtWeeklyGoal.Multiline = true;
+            this.txtWeeklyGoal.Name = "txtWeeklyGoal";
+            this.txtWeeklyGoal.Size = new System.Drawing.Size(153, 20);
+            this.txtWeeklyGoal.TabIndex = 1;
             // 
-            // textBox8
+            // txtTotalCal
             // 
-            this.textBox8.Location = new System.Drawing.Point(205, 120);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(132, 20);
-            this.textBox8.TabIndex = 1;
+            this.txtTotalCal.Enabled = false;
+            this.txtTotalCal.Location = new System.Drawing.Point(205, 120);
+            this.txtTotalCal.Multiline = true;
+            this.txtTotalCal.Name = "txtTotalCal";
+            this.txtTotalCal.Size = new System.Drawing.Size(132, 20);
+            this.txtTotalCal.TabIndex = 1;
             // 
             // label4
             // 
@@ -304,6 +308,17 @@
             this.label5.Size = new System.Drawing.Size(122, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Weekly Goal:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label6.Location = new System.Drawing.Point(173, 258);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(162, 18);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "% from your goal";
             // 
             // label1
             // 
@@ -330,11 +345,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Poor Richard", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(7, 12);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 28);
+            this.label12.Size = new System.Drawing.Size(111, 29);
             this.label12.TabIndex = 0;
             this.label12.Text = "Calories";
             // 
@@ -349,16 +364,20 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Calories Burned ";
             // 
-            // label6
+            // btnUpdate
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(173, 258);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(162, 18);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "% from your goal";
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnUpdate.Location = new System.Drawing.Point(92, 360);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(178, 41);
+            this.btnUpdate.TabIndex = 21;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // ProgressForm
             // 
@@ -382,11 +401,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtBurnedFri;
+        private System.Windows.Forms.TextBox txtBurnedThu;
+        private System.Windows.Forms.TextBox txtBurnedTues;
+        private System.Windows.Forms.TextBox txtBurnedWed;
+        private System.Windows.Forms.TextBox txtBurnedMon;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
@@ -396,18 +415,19 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtPercent;
+        private System.Windows.Forms.TextBox txtWeeklyGoal;
+        private System.Windows.Forms.TextBox txtTotalCal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtBurnedSun;
+        private System.Windows.Forms.TextBox txtBurnedSat;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
