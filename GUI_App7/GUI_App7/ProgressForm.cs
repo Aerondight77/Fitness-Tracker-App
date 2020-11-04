@@ -24,7 +24,7 @@ namespace GUI_App7
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             int goal = int.Parse(txtWeeklyGoal.Text);
-            if (goal == 0)
+            if (goal == 1 || goal == 0)
             {
                 MessageBox.Show("Please enter a valid Weekly Goal value.");
             }
@@ -60,6 +60,7 @@ namespace GUI_App7
                     int total = mon + tues + wed + thur + fri + sat + sun;
                     txtTotalCal.Clear();
                     txtTotalCal.AppendText(total.ToString());
+                    // Keeps giving me either 0 or 100 for some reason. Please check. -Bailey.
                     double percent = (total / goal) * 100;
                     txtPercent.Clear();
                     txtPercent.AppendText(percent.ToString());
@@ -101,10 +102,10 @@ namespace GUI_App7
                 txtWeeklyGoal.AppendText(goal.ToString());
 
                 int total = mon + tues + wed + thur + fri + sat + sun;
-                double percent = (total / goal) * 100;
+                //double percent = (total / goal) * 100;
 
                 txtTotalCal.AppendText(total.ToString());
-                txtPercent.AppendText(percent.ToString());
+                //txtPercent.AppendText(percent.ToString());
             }
             else
             {
