@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GUI_App7
 {
     public partial class DashboardForm : Form
     {
+        DBAccess objDBAccess = new DBAccess();
+        DataTable dtLogin_Table = new DataTable();
+
         public DashboardForm()
         {
             InitializeComponent();
@@ -25,6 +29,38 @@ namespace GUI_App7
             // SummaryForm myProfileForm_Vrb = new SummaryForm();
             // myProfileForm_Vrb.Show();
 
+        }
+
+        private void DashboardForm_Load(object sender, EventArgs e)
+        {
+            // Add more later on when others are implemented.
+            int numCups, calBurned, weight;
+            float bmi;
+
+            // Add more later on when others are implemented.
+            string query = "SELECT Weight,BMI,NoOfCups,CalBurnedTotal FROM Login_Table where ID = '" + LoginForm.id + "'";
+
+            objDBAccess.readDatathroughAdapter(query, dtLogin_Table);
+
+            if (dtLogin_Table.Rows.Count == 1)
+            {
+                numCups = int.Parse(dtLogin_Table.Rows[0]["NoOfCups"].ToString());
+                calBurned = int.Parse(dtLogin_Table.Rows[0]["CalBurnedTotal"].ToString());
+                weight = int.Parse(dtLogin_Table.Rows[0]["Weight"].ToString());
+                bmi = int.Parse(dtLogin_Table.Rows[0]["BMI"].ToString());
+
+                objDBAccess.closeConn();
+
+                txtCupsWater.AppendText(numCups.ToString());
+                txtCalBurned.AppendText(calBurned.ToString());
+                txtWeight.AppendText(weight.ToString());
+                txtBMI.AppendText(bmi.ToString());
+            }
+            else
+            {
+                // Debug purposes.
+                MessageBox.Show("Error retrieving and loading data from database.");
+            }
         }
     }
 }

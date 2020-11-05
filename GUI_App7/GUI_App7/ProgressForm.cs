@@ -37,11 +37,12 @@ namespace GUI_App7
                 float fri = float.Parse(txtBurnedFri.Text);
                 float sat = float.Parse(txtBurnedSat.Text);
                 float sun = float.Parse(txtBurnedSun.Text);
+                float total = mon + tues + wed + thur + fri + sat + sun;
 
                 string query =
                     "Update Login_Table SET CalBurnedMon = '" + @mon + "', CalBurnedTue = '" + @tues + "', CalBurnedWed = '" + @wed + "', CalBurnedThur = '" + @thur +
-                    "', CalBurnedFri = '" + @fri + "', CalBurnedSat = '" + @sat + "', CalBurnedSun = '" + @sun + "', CalBurnedGoal = '" + @goal + "' where ID = '" +
-                    LoginForm.id + "'";
+                    "', CalBurnedFri = '" + @fri + "', CalBurnedSat = '" + @sat + "', CalBurnedSun = '" + @sun + "', CalBurnedGoal = '" + @goal + "', CalBurnedTotal = '"
+                    + @total + "' where ID = '" + LoginForm.id + "'";
 
                 SqlCommand updateCommand = new SqlCommand(query);
 
@@ -53,11 +54,11 @@ namespace GUI_App7
                 updateCommand.Parameters.AddWithValue("@sat", @sat);
                 updateCommand.Parameters.AddWithValue("@sun", @sun);
                 updateCommand.Parameters.AddWithValue("@goal", @goal);
+                updateCommand.Parameters.AddWithValue("@total", @total);
 
                 int row = objDBAccess.executeQuery(updateCommand);
                 if (row == 1)
                 {
-                    float total = mon + tues + wed + thur + fri + sat + sun;
                     txtTotalCal.Clear();
                     txtTotalCal.AppendText(total.ToString());
                     // Keeps giving me either 0 or 100 for some reason. Please check. -Bailey.
@@ -71,24 +72,25 @@ namespace GUI_App7
 
         private void ProgressForm_Load(object sender, EventArgs e)
         {
-            int mon, tues, wed, thur, fri, sat, sun, goal;
+            float mon, tues, wed, thur, fri, sat, sun, goal, total;
 
             string query =
-                    "SELECT CalBurnedMon,CalBurnedTue,CalBurnedWed,CalBurnedThur,CalBurnedFri,CalBurnedSat,CalBurnedSun,CalBurnedGoal FROM Login_Table where ID = '" +
+                    "SELECT CalBurnedMon,CalBurnedTue,CalBurnedWed,CalBurnedThur,CalBurnedFri,CalBurnedSat,CalBurnedSun,CalBurnedGoal,CalBurnedTotal FROM Login_Table where ID = '" +
                     LoginForm.id + "'";
 
             objDBAccess.readDatathroughAdapter(query, dtLogin_Table);
 
             if (dtLogin_Table.Rows.Count == 1)
             {
-                mon = int.Parse(dtLogin_Table.Rows[0]["CalBurnedMon"].ToString());
-                tues = int.Parse(dtLogin_Table.Rows[0]["CalBurnedTue"].ToString());
-                wed = int.Parse(dtLogin_Table.Rows[0]["CalBurnedWed"].ToString());
-                thur = int.Parse(dtLogin_Table.Rows[0]["CalBurnedThur"].ToString());
-                fri = int.Parse(dtLogin_Table.Rows[0]["CalBurnedFri"].ToString());
-                sat = int.Parse(dtLogin_Table.Rows[0]["CalBurnedSat"].ToString());
-                sun = int.Parse(dtLogin_Table.Rows[0]["CalBurnedSun"].ToString());
-                goal = int.Parse(dtLogin_Table.Rows[0]["CalBurnedGoal"].ToString());
+                mon = float.Parse(dtLogin_Table.Rows[0]["CalBurnedMon"].ToString());
+                tues = float.Parse(dtLogin_Table.Rows[0]["CalBurnedTue"].ToString());
+                wed = float.Parse(dtLogin_Table.Rows[0]["CalBurnedWed"].ToString());
+                thur = float.Parse(dtLogin_Table.Rows[0]["CalBurnedThur"].ToString());
+                fri = float.Parse(dtLogin_Table.Rows[0]["CalBurnedFri"].ToString());
+                sat = float.Parse(dtLogin_Table.Rows[0]["CalBurnedSat"].ToString());
+                sun = float.Parse(dtLogin_Table.Rows[0]["CalBurnedSun"].ToString());
+                goal = float.Parse(dtLogin_Table.Rows[0]["CalBurnedGoal"].ToString());
+                total = float.Parse(dtLogin_Table.Rows[0]["CalBurnedTotal"].ToString());
 
                 objDBAccess.closeConn();
 
@@ -101,11 +103,10 @@ namespace GUI_App7
                 txtBurnedSun.AppendText(sun.ToString());
                 txtWeeklyGoal.AppendText(goal.ToString());
 
-                float total = mon + tues + wed + thur + fri + sat + sun;
-                //double percent = (total / goal) * 100;
+                float percent = (total / goal) * 100;
 
                 txtTotalCal.AppendText(total.ToString());
-                //txtPercent.AppendText(percent.ToString());
+                txtPercent.AppendText(percent.ToString());
             }
             else
             {

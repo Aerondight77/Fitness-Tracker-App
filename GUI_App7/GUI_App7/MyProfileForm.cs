@@ -30,7 +30,7 @@ namespace GUI_App7
             int heightIN = int.Parse(txtHeightIN.Text);
             string dob = txtDOB.Text;
             string gender = txtGender.Text;
-            double bmi;
+            float bmi;
 
             if (heightFT.Equals(0))
             {
@@ -90,8 +90,9 @@ namespace GUI_App7
         {
             int formAge, heightFT, heightIN;
             string dob, gender;
+            float bmi;
 
-            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN FROM Login_Table where ID = '" + LoginForm.id + "'";
+            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN,BMI FROM Login_Table where ID = '" + LoginForm.id + "'";
 
             SqlCommand getCommand = new SqlCommand(query);
 
@@ -104,6 +105,7 @@ namespace GUI_App7
                 formAge = int.Parse(dtLogin_Table.Rows[0]["Age"].ToString());
                 dob = dtLogin_Table.Rows[0]["DOB"].ToString();
                 gender = dtLogin_Table.Rows[0]["Gender"].ToString();
+                bmi = float.Parse(dtLogin_Table.Rows[0]["BMI"].ToString());
 
                 objDBAccess.closeConn();
 
@@ -112,6 +114,7 @@ namespace GUI_App7
                 txtDOB.AppendText(dob);
                 txtGender.AppendText(gender);
                 txtAge.AppendText(formAge.ToString());
+                txtBMI.AppendText(bmi.ToString());
             }
         }
 
