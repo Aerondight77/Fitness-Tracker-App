@@ -57,6 +57,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -245,6 +247,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.txtPercent);
             this.panel1.Controls.Add(this.txtWeeklyGoal);
@@ -379,6 +383,28 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Calories Burned ";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label10.Location = new System.Drawing.Point(64, 321);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 18);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "need to be accurate.";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label15.Location = new System.Drawing.Point(11, 303);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(280, 18);
+            this.label15.TabIndex = 31;
+            this.label15.Text = "NOTE: An estimation is sufficient; no";
+            // 
             // ProgressForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,5 +456,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label15;
     }
 }
