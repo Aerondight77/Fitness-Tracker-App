@@ -203,5 +203,24 @@ namespace GUI_App7
         {
             btnProg.BackColor = Color.FromArgb(255, 255, 255);
         }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnProg.Height;
+            panelNav.Top = btnProg.Top;
+            btnProg.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Daily Food Intake Calorie Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            FoodForm myProfileForm_Vrb = new FoodForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnFood_Leave(object sender, EventArgs e)
+        {
+            btnProg.BackColor = Color.FromArgb(255, 255, 255);
+        }
     }
 }
