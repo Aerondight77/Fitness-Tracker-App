@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFood = new System.Windows.Forms.Button();
             this.btnWater = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
             this.btn_Weight = new System.Windows.Forms.Button();
@@ -48,7 +49,7 @@
             this.lbITitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
-            this.btnFood = new System.Windows.Forms.Button();
+            this.btnAccountSettings = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnAccountSettings);
             this.panel1.Controls.Add(this.btnFood);
             this.panel1.Controls.Add(this.btnWater);
             this.panel1.Controls.Add(this.btnSleep);
@@ -73,6 +75,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 513);
             this.panel1.TabIndex = 2;
+            // 
+            // btnFood
+            // 
+            this.btnFood.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFood.FlatAppearance.BorderSize = 0;
+            this.btnFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFood.Image")));
+            this.btnFood.Location = new System.Drawing.Point(0, 369);
+            this.btnFood.Name = "btnFood";
+            this.btnFood.Size = new System.Drawing.Size(186, 42);
+            this.btnFood.TabIndex = 8;
+            this.btnFood.Text = "Food Intake";
+            this.btnFood.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnFood.UseVisualStyleBackColor = true;
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
+            this.btnFood.Leave += new System.EventHandler(this.btnFood_Leave);
             // 
             // btnWater
             // 
@@ -327,23 +347,23 @@
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
             // 
-            // btnFood
+            // btnAccountSettings
             // 
-            this.btnFood.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFood.FlatAppearance.BorderSize = 0;
-            this.btnFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFood.Image")));
-            this.btnFood.Location = new System.Drawing.Point(0, 369);
-            this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(186, 42);
-            this.btnFood.TabIndex = 8;
-            this.btnFood.Text = "Food Intake";
-            this.btnFood.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnFood.UseVisualStyleBackColor = true;
-            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
-            this.btnFood.Leave += new System.EventHandler(this.btnFood_Leave);
+            this.btnAccountSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccountSettings.FlatAppearance.BorderSize = 0;
+            this.btnAccountSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSettings.Image")));
+            this.btnAccountSettings.Location = new System.Drawing.Point(0, 411);
+            this.btnAccountSettings.Name = "btnAccountSettings";
+            this.btnAccountSettings.Size = new System.Drawing.Size(186, 42);
+            this.btnAccountSettings.TabIndex = 9;
+            this.btnAccountSettings.Text = "Account Settings";
+            this.btnAccountSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAccountSettings.UseVisualStyleBackColor = true;
+            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
+            this.btnAccountSettings.Leave += new System.EventHandler(this.btnAccSettings_Leave);
             // 
             // MainForm
             // 
@@ -393,6 +413,7 @@
         private System.Windows.Forms.Button btnSleep;
         private System.Windows.Forms.Button btnWater;
         private System.Windows.Forms.Button btnFood;
+        private System.Windows.Forms.Button btnAccountSettings;
     }
 }
 

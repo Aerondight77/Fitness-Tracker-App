@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountSettings.Designer.cs">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
     <Compile Include="FoodForm.cs">
       <SubType>Form</SubType>
@@ -130,6 +136,9 @@
     <Compile Include="WeightForm.Designer.cs">
       <DependentUpon>WeightForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AccountSettings.resx">
+      <DependentUpon>AccountSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodForm.resx">
       <DependentUpon>FoodForm.cs</DependentUpon>
     </EmbeddedResource>
