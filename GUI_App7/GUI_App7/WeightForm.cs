@@ -53,9 +53,6 @@ namespace GUI_App7
                     txtWeightDiff.Clear();
                     int diff = Math.Abs(weightGoal - currWeight);
                     txtWeightDiff.AppendText(diff.ToString());
-                    //txtAmtChangedWeight.Clear();
-                    //diff = Math.Abs(getWeight() - currWeight);
-                    //txtAmtChangedWeight.AppendText(diff.ToString());
                 }
                 else
                 {

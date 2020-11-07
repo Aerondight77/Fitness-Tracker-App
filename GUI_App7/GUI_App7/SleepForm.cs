@@ -36,10 +36,13 @@ namespace GUI_App7
                 //int sleepStart = int.Parse(txtWentSleep.Text);
                 //int sleepEnd = int.Parse(txtWokeUp.Text);
 
-                int hourStart = dateTimePickerSleep.Value.Hour;
-                int hourEnd = dateTimePickerWake.Value.Hour;
-
-            int timeSlept = Math.Abs(hourStart - hourEnd);
+                //int hourStart = dateTimePickerSleep.Value.Hour;
+                //int hourEnd = dateTimePickerWake.Value.Hour;
+            DateTime start = new DateTime(2020, 1, 1, dateTimePickerSleep.Value.Hour, 0, 0);
+            DateTime end = new DateTime(2020, 1, 2, dateTimePickerWake.Value.Hour, 0, 0);
+            TimeSpan diff = end - start;
+            
+            double timeSlept = diff.Hours;
             string query = "Update Login_Table SET Sleep = '" + @timeSlept + "' where ID = '" + LoginForm.id + "'";
             SqlCommand updateCommand = new SqlCommand(query);
 

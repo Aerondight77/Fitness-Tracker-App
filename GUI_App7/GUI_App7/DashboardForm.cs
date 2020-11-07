@@ -35,10 +35,10 @@ namespace GUI_App7
         {
             // Add more later on when others are implemented.
             int numCups, calBurned, weight, calIntake;
-            float bmi;
+            float bmi, sleep;
 
             // Add more later on when others are implemented.
-            string query = "SELECT Weight,BMI,NoOfCups,CalBurnedTotal,CalIntakeTotal FROM Login_Table where ID = '" + LoginForm.id + "'";
+            string query = "SELECT Weight,BMI,Sleep,NoOfCups,CalBurnedTotal,CalIntakeTotal FROM Login_Table where ID = '" + LoginForm.id + "'";
 
             objDBAccess.readDatathroughAdapter(query, dtLogin_Table);
 
@@ -48,6 +48,7 @@ namespace GUI_App7
                 calBurned = int.Parse(dtLogin_Table.Rows[0]["CalBurnedTotal"].ToString());
                 weight = int.Parse(dtLogin_Table.Rows[0]["Weight"].ToString());
                 bmi = int.Parse(dtLogin_Table.Rows[0]["BMI"].ToString());
+                sleep = int.Parse(dtLogin_Table.Rows[0]["Sleep"].ToString());
                 calIntake = int.Parse(dtLogin_Table.Rows[0]["CalIntakeTotal"].ToString());
 
                 objDBAccess.closeConn();
@@ -56,6 +57,7 @@ namespace GUI_App7
                 txtCalBurned.AppendText(calBurned.ToString());
                 txtWeight.AppendText(weight.ToString());
                 txtBMI.AppendText(bmi.ToString());
+                txtHoursSlept.AppendText(sleep.ToString());
                 txtCalIntake.AppendText(calIntake.ToString());
             }
             else

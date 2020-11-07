@@ -31,15 +31,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePickerWake = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerSleep = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.txtTimeSlept = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtWokeUp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtWentSleep = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -72,15 +67,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.dateTimePickerWake);
             this.panel1.Controls.Add(this.dateTimePickerSleep);
-            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.txtTimeSlept);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txtWokeUp);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtWentSleep);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -106,17 +96,6 @@
             this.dateTimePickerSleep.ShowUpDown = true;
             this.dateTimePickerSleep.Size = new System.Drawing.Size(85, 20);
             this.dateTimePickerSleep.TabIndex = 27;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(307, 38);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 18);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "(or a.m.)";
             // 
             // btnUpdate
             // 
@@ -145,7 +124,7 @@
             this.txtTimeSlept.Name = "txtTimeSlept";
             this.txtTimeSlept.Size = new System.Drawing.Size(109, 55);
             this.txtTimeSlept.TabIndex = 24;
-            this.txtTimeSlept.Text = "ads";
+            this.txtTimeSlept.Text = "_";
             this.txtTimeSlept.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
@@ -159,24 +138,6 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Time slept:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(296, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(42, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "a.m.";
-            // 
-            // txtWokeUp
-            // 
-            this.txtWokeUp.Location = new System.Drawing.Point(280, 250);
-            this.txtWokeUp.Name = "txtWokeUp";
-            this.txtWokeUp.Size = new System.Drawing.Size(58, 20);
-            this.txtWokeUp.TabIndex = 5;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -187,24 +148,6 @@
             this.label2.Size = new System.Drawing.Size(188, 18);
             this.label2.TabIndex = 4;
             this.label2.Text = "Hour that you woke up:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(334, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "p.m.";
-            // 
-            // txtWentSleep
-            // 
-            this.txtWentSleep.Location = new System.Drawing.Point(280, 212);
-            this.txtWentSleep.Name = "txtWentSleep";
-            this.txtWentSleep.Size = new System.Drawing.Size(58, 20);
-            this.txtWentSleep.TabIndex = 2;
             // 
             // label18
             // 
@@ -500,14 +443,9 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtWokeUp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtWentSleep;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.TextBox txtTimeSlept;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;

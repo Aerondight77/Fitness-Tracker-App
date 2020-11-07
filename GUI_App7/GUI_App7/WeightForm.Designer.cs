@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtWeightDiff = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtAmtChangedWeight = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblWeightInfo = new System.Windows.Forms.Label();
             this.txtWeightGoal = new System.Windows.Forms.TextBox();
@@ -45,10 +46,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtWeightDiff = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,9 +58,6 @@
             this.panel2.Controls.Add(this.txtWeightDiff);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.btnUpdate);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txtAmtChangedWeight);
-            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.lblWeightInfo);
             this.panel2.Controls.Add(this.txtWeightGoal);
@@ -81,6 +75,54 @@
             this.panel2.Size = new System.Drawing.Size(719, 442);
             this.panel2.TabIndex = 11;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label9.Location = new System.Drawing.Point(476, 201);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(119, 18);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "from your goal";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label8.Location = new System.Drawing.Point(623, 145);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(33, 18);
+            this.label8.TabIndex = 25;
+            this.label8.Text = "lbs.";
+            // 
+            // txtWeightDiff
+            // 
+            this.txtWeightDiff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtWeightDiff.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtWeightDiff.Enabled = false;
+            this.txtWeightDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWeightDiff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.txtWeightDiff.Location = new System.Drawing.Point(450, 127);
+            this.txtWeightDiff.Multiline = true;
+            this.txtWeightDiff.Name = "txtWeightDiff";
+            this.txtWeightDiff.Size = new System.Drawing.Size(167, 59);
+            this.txtWeightDiff.TabIndex = 24;
+            this.txtWeightDiff.Text = "_";
+            this.txtWeightDiff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label7.Location = new System.Drawing.Point(500, 91);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(64, 18);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "You are";
+            // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
@@ -95,37 +137,6 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(10, 205);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 18);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Amount changed:";
-            // 
-            // txtAmtChangedWeight
-            // 
-            this.txtAmtChangedWeight.Enabled = false;
-            this.txtAmtChangedWeight.Location = new System.Drawing.Point(164, 202);
-            this.txtAmtChangedWeight.Multiline = true;
-            this.txtAmtChangedWeight.Name = "txtAmtChangedWeight";
-            this.txtAmtChangedWeight.Size = new System.Drawing.Size(107, 20);
-            this.txtAmtChangedWeight.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(276, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 18);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "lbs.";
             // 
             // label6
             // 
@@ -150,7 +161,7 @@
             // 
             // txtWeightGoal
             // 
-            this.txtWeightGoal.Location = new System.Drawing.Point(164, 260);
+            this.txtWeightGoal.Location = new System.Drawing.Point(164, 216);
             this.txtWeightGoal.Multiline = true;
             this.txtWeightGoal.Name = "txtWeightGoal";
             this.txtWeightGoal.Size = new System.Drawing.Size(107, 20);
@@ -178,7 +189,7 @@
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label24.Location = new System.Drawing.Point(10, 262);
+            this.label24.Location = new System.Drawing.Point(10, 218);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(101, 18);
             this.label24.TabIndex = 0;
@@ -200,7 +211,7 @@
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label22.Location = new System.Drawing.Point(276, 259);
+            this.label22.Location = new System.Drawing.Point(276, 215);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(33, 18);
             this.label22.TabIndex = 0;
@@ -250,54 +261,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "lbs.";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label7.Location = new System.Drawing.Point(500, 91);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 18);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "You are";
-            // 
-            // txtWeightDiff
-            // 
-            this.txtWeightDiff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.txtWeightDiff.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtWeightDiff.Enabled = false;
-            this.txtWeightDiff.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWeightDiff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.txtWeightDiff.Location = new System.Drawing.Point(450, 127);
-            this.txtWeightDiff.Multiline = true;
-            this.txtWeightDiff.Name = "txtWeightDiff";
-            this.txtWeightDiff.Size = new System.Drawing.Size(167, 59);
-            this.txtWeightDiff.TabIndex = 24;
-            this.txtWeightDiff.Text = "_";
-            this.txtWeightDiff.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label8.Location = new System.Drawing.Point(623, 145);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(33, 18);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "lbs.";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label9.Location = new System.Drawing.Point(476, 201);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(119, 18);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "from your goal";
-            // 
             // WeightForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -318,9 +281,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtAmtChangedWeight;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblWeightInfo;
         private System.Windows.Forms.TextBox txtWeightGoal;
