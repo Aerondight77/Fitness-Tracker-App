@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAccountSettings = new System.Windows.Forms.Button();
             this.btnFood = new System.Windows.Forms.Button();
             this.btnWater = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.lbITitle = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.PnlFormLoader = new System.Windows.Forms.Panel();
-            this.btnAccountSettings = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -58,12 +58,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnAccountSettings);
             this.panel1.Controls.Add(this.btnFood);
             this.panel1.Controls.Add(this.btnWater);
             this.panel1.Controls.Add(this.btnSleep);
             this.panel1.Controls.Add(this.btn_Weight);
-            this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnProg);
             this.panel1.Controls.Add(this.btnSummary);
@@ -75,6 +75,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(186, 513);
             this.panel1.TabIndex = 2;
+            // 
+            // btnAccountSettings
+            // 
+            this.btnAccountSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccountSettings.FlatAppearance.BorderSize = 0;
+            this.btnAccountSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSettings.Image")));
+            this.btnAccountSettings.Location = new System.Drawing.Point(0, 411);
+            this.btnAccountSettings.Name = "btnAccountSettings";
+            this.btnAccountSettings.Size = new System.Drawing.Size(186, 42);
+            this.btnAccountSettings.TabIndex = 9;
+            this.btnAccountSettings.Text = "Account Settings";
+            this.btnAccountSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAccountSettings.UseVisualStyleBackColor = true;
+            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
+            this.btnAccountSettings.Leave += new System.EventHandler(this.btnAccSettings_Leave);
             // 
             // btnFood
             // 
@@ -141,7 +159,7 @@
             this.btn_Weight.Location = new System.Drawing.Point(0, 243);
             this.btn_Weight.Name = "btn_Weight";
             this.btn_Weight.Size = new System.Drawing.Size(186, 42);
-            this.btn_Weight.TabIndex = 5;
+            this.btn_Weight.TabIndex = 4;
             this.btn_Weight.Text = "Weight";
             this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btn_Weight.UseVisualStyleBackColor = true;
@@ -155,9 +173,8 @@
             this.panelNav.Controls.Add(this.label1);
             this.panelNav.Location = new System.Drawing.Point(0, 81);
             this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(5, 32);
+            this.panelNav.Size = new System.Drawing.Size(5, 429);
             this.panelNav.TabIndex = 3;
-            this.panelNav.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label2
             // 
@@ -197,6 +214,7 @@
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.Leave += new System.EventHandler(this.btnLogout_Leave);
             // 
             // btnProg
             // 
@@ -282,7 +300,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(186, 75);
             this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label5
             // 
@@ -346,24 +363,6 @@
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
-            // 
-            // btnAccountSettings
-            // 
-            this.btnAccountSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAccountSettings.FlatAppearance.BorderSize = 0;
-            this.btnAccountSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccountSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSettings.Image")));
-            this.btnAccountSettings.Location = new System.Drawing.Point(0, 411);
-            this.btnAccountSettings.Name = "btnAccountSettings";
-            this.btnAccountSettings.Size = new System.Drawing.Size(186, 42);
-            this.btnAccountSettings.TabIndex = 9;
-            this.btnAccountSettings.Text = "Account Settings";
-            this.btnAccountSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAccountSettings.UseVisualStyleBackColor = true;
-            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
-            this.btnAccountSettings.Leave += new System.EventHandler(this.btnAccSettings_Leave);
             // 
             // MainForm
             // 

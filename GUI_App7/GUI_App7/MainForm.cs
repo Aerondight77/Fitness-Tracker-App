@@ -106,6 +106,76 @@ namespace GUI_App7
             myProfileForm_Vrb.Show();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btn_Weight.Height;
+            panelNav.Top = btn_Weight.Top;
+            btn_Weight.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Weight";
+            this.PnlFormLoader.Controls.Clear();
+            WeightForm myProfileForm_Vrb = new WeightForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnSleep_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnSleep.Height;
+            panelNav.Top = btnSleep.Top;
+            btnSleep.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Sleep Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            SleepForm myProfileForm_Vrb = new SleepForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWater_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnWater.Height;
+            panelNav.Top = btnWater.Top;
+            btnWater.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Daily Water Intake Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            WaterForm myProfileForm_Vrb = new WaterForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnFood.Height;
+            panelNav.Top = btnFood.Top;
+            btnFood.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Daily Food Intake Calorie Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            FoodForm myProfileForm_Vrb = new FoodForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnAccountSettings_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnAccountSettings.Height;
+            panelNav.Top = btnAccountSettings.Top;
+            btnAccountSettings.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Daily Food Intake Calorie Tracking";
+            this.PnlFormLoader.Controls.Clear();
+            AccountSettings myProfileForm_Vrb = new AccountSettings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
         private void BtnDashboard_Leave(object sender, EventArgs e)
         {
            // BtnDashboard.BackColor = Color.FromArgb(238, 238, 238);
@@ -130,6 +200,37 @@ namespace GUI_App7
             btnProg.BackColor = Color.FromArgb(255, 255, 255);
         }
 
+        private void btnWeight_Leave(object sender, EventArgs e)
+        {
+            btn_Weight.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnSleep_Leave(object sender, EventArgs e)
+        {
+            btnSleep.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnWater_Leave(object sender, EventArgs e)
+        {
+            btnWater.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnFood_Leave(object sender, EventArgs e)
+        {
+            btnFood.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnAccSettings_Leave(object sender, EventArgs e)
+        {
+            btnAccountSettings.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnLogout_Leave(object sender, EventArgs e)
+        {
+            btnLogout.BackColor = Color.FromArgb(255, 255, 255);
+
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -141,105 +242,6 @@ namespace GUI_App7
             new LoginForm().Show();
             this.Hide();
         }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnProg.Height;
-            panelNav.Top = btnProg.Top;
-            btnProg.BackColor = Color.FromArgb(245, 245, 245);
-
-            lbITitle.Text = "Weight";
-            this.PnlFormLoader.Controls.Clear();
-            WeightForm myProfileForm_Vrb = new WeightForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
-            myProfileForm_Vrb.Show();
-        }
-
-        private void btnWeight_Leave(object sender, EventArgs e)
-        {
-            btnProg.BackColor = Color.FromArgb(255, 255, 255);
-        }
-
-        private void btnSleep_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnProg.Height;
-            panelNav.Top = btnProg.Top;
-            btnProg.BackColor = Color.FromArgb(245, 245, 245);
-
-            lbITitle.Text = "Sleep Tracking";
-            this.PnlFormLoader.Controls.Clear();
-            SleepForm myProfileForm_Vrb = new SleepForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
-            myProfileForm_Vrb.Show();
-        }
-
-        private void btnSleep_Leave(object sender, EventArgs e)
-        {
-            btnProg.BackColor = Color.FromArgb(255, 255, 255);
-        }
-
-        private void btnWater_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnProg.Height;
-            panelNav.Top = btnProg.Top;
-            btnProg.BackColor = Color.FromArgb(245, 245, 245);
-
-            lbITitle.Text = "Daily Water Intake Tracking";
-            this.PnlFormLoader.Controls.Clear();
-            WaterForm myProfileForm_Vrb = new WaterForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
-            myProfileForm_Vrb.Show();
-        }
-
-        private void btnWater_Leave(object sender, EventArgs e)
-        {
-            btnProg.BackColor = Color.FromArgb(255, 255, 255);
-        }
-
-        private void btnFood_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnProg.Height;
-            panelNav.Top = btnProg.Top;
-            btnProg.BackColor = Color.FromArgb(245, 245, 245);
-
-            lbITitle.Text = "Daily Food Intake Calorie Tracking";
-            this.PnlFormLoader.Controls.Clear();
-            FoodForm myProfileForm_Vrb = new FoodForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
-            myProfileForm_Vrb.Show();
-        }
-
-        private void btnFood_Leave(object sender, EventArgs e)
-        {
-            btnProg.BackColor = Color.FromArgb(255, 255, 255);
-        }
-
-        private void btnAccountSettings_Click(object sender, EventArgs e)
-        {
-            panelNav.Height = btnProg.Height;
-            panelNav.Top = btnProg.Top;
-            btnProg.BackColor = Color.FromArgb(245, 245, 245);
-
-            lbITitle.Text = "Daily Food Intake Calorie Tracking";
-            this.PnlFormLoader.Controls.Clear();
-            AccountSettings myProfileForm_Vrb = new AccountSettings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
-            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
-            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
-            myProfileForm_Vrb.Show();
-        }
-
-        private void btnAccSettings_Leave(object sender, EventArgs e)
-        {
-            btnProg.BackColor = Color.FromArgb(255, 255, 255);
-        }
     }
+
 }
