@@ -66,7 +66,10 @@ namespace GUI_App7
                     txtPercent.Clear();
                     txtPercent.AppendText(percent.ToString());
                 }
-
+                else
+                {
+                    MessageBox.Show("Failed to update. Please try again.");
+                }
             }
         }
 

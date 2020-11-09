@@ -72,11 +72,11 @@ namespace GUI_App7
             if (row == 1)
             {
                 // Debug purposes.
-                MessageBox.Show("Successfully updated DB.");
+                MessageBox.Show("Successfully updated information.");
             }
             else
             {
-                MessageBox.Show("Failed to update DB.");
+                MessageBox.Show("Failed to update information.");
             }
         }
 

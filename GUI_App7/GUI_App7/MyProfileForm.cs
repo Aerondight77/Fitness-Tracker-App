@@ -74,7 +74,7 @@ namespace GUI_App7
                 if (row == 1)
                 {
                     // Message for debug purposes. [MIGHT NEED TO REMOVE LATER ON]
-                    MessageBox.Show("Personal info updated in DB.");
+                    MessageBox.Show("Personal information updated.");
 
                     txtBMI.Clear();
                     txtBMI.AppendText(bmi.ToString());
