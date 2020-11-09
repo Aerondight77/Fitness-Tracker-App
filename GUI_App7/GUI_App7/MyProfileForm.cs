@@ -18,6 +18,8 @@ namespace GUI_App7
         DataTable dtLogin_Table = new DataTable();
         DataTable dtLogin_Table2 = new DataTable();
 
+        public static int Weight;
+
         public MyProfileForm()
         {
             InitializeComponent();
@@ -55,7 +57,7 @@ namespace GUI_App7
             else
             {
                 int heightinINOnly = (heightFT * 12) + heightIN;
-                bmi = (getWeight() * 703) / (heightinINOnly * heightinINOnly);
+                bmi = (Weight * 703) / (heightinINOnly * heightinINOnly);
                 
                 string query = "Update Login_Table SET Gender = '" + @gender + "', Age = '" + @formAge + "', DOB = '" + @dob + "', HeightFT = '" + @heightFT +
                     "', HeightIN = '" + @heightIN + "', BMI = '" + @bmi + "' where ID = '" + LoginForm.id + "'";
@@ -92,7 +94,7 @@ namespace GUI_App7
             string dob, gender;
             float bmi;
 
-            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN,BMI FROM Login_Table where ID = '" + LoginForm.id + "'";
+            string query = "SELECT Gender,Age,DOB,HeightFT,HeightIN,Weight,BMI FROM Login_Table where ID = '" + LoginForm.id + "'";
 
             SqlCommand getCommand = new SqlCommand(query);
 
@@ -106,6 +108,7 @@ namespace GUI_App7
                 dob = dtLogin_Table.Rows[0]["DOB"].ToString();
                 gender = dtLogin_Table.Rows[0]["Gender"].ToString();
                 bmi = float.Parse(dtLogin_Table.Rows[0]["BMI"].ToString());
+                Weight = int.Parse(dtLogin_Table.Rows[0]["Weight"].ToString());
 
                 objDBAccess.closeConn();
 
