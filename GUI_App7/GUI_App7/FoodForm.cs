@@ -115,12 +115,19 @@ namespace GUI_App7
             if (row == 1)
             {
                 txtIntakeMon.Clear();
+                txtIntakeMon.AppendText(empty.ToString());
                 txtIntakeTues.Clear();
+                txtIntakeTues.AppendText(empty.ToString());
                 txtIntakeWed.Clear();
+                txtIntakeWed.AppendText(empty.ToString());
                 txtIntakeThu.Clear();
+                txtIntakeThu.AppendText(empty.ToString());
                 txtIntakeFri.Clear();
+                txtIntakeFri.AppendText(empty.ToString());
                 txtIntakeSat.Clear();
+                txtIntakeSat.AppendText(empty.ToString());
                 txtIntakeSun.Clear();
+                txtIntakeSun.AppendText(empty.ToString());
                 txtTotalCalIntake.Clear();
             }
             else
