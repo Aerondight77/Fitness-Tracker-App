@@ -79,9 +79,9 @@
             this.lblCompleted5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblCompleted5.Location = new System.Drawing.Point(447, 290);
             this.lblCompleted5.Name = "lblCompleted5";
-            this.lblCompleted5.Size = new System.Drawing.Size(124, 25);
+            this.lblCompleted5.Size = new System.Drawing.Size(169, 25);
             this.lblCompleted5.TabIndex = 17;
-            this.lblCompleted5.Text = "Completed";
+            this.lblCompleted5.Text = "Complete Task";
             this.lblCompleted5.Click += new System.EventHandler(this.lblCompleted5_Click);
             // 
             // lblCompleted4
@@ -91,9 +91,9 @@
             this.lblCompleted4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblCompleted4.Location = new System.Drawing.Point(447, 236);
             this.lblCompleted4.Name = "lblCompleted4";
-            this.lblCompleted4.Size = new System.Drawing.Size(124, 25);
+            this.lblCompleted4.Size = new System.Drawing.Size(169, 25);
             this.lblCompleted4.TabIndex = 16;
-            this.lblCompleted4.Text = "Completed";
+            this.lblCompleted4.Text = "Complete Task";
             this.lblCompleted4.Click += new System.EventHandler(this.lblCompleted4_Click);
             // 
             // lblCompleted3
@@ -103,9 +103,9 @@
             this.lblCompleted3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblCompleted3.Location = new System.Drawing.Point(447, 185);
             this.lblCompleted3.Name = "lblCompleted3";
-            this.lblCompleted3.Size = new System.Drawing.Size(124, 25);
+            this.lblCompleted3.Size = new System.Drawing.Size(169, 25);
             this.lblCompleted3.TabIndex = 15;
-            this.lblCompleted3.Text = "Completed";
+            this.lblCompleted3.Text = "Complete Task";
             this.lblCompleted3.Click += new System.EventHandler(this.lblCompleted3_Click);
             // 
             // lblCompleted2
@@ -115,9 +115,9 @@
             this.lblCompleted2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblCompleted2.Location = new System.Drawing.Point(447, 133);
             this.lblCompleted2.Name = "lblCompleted2";
-            this.lblCompleted2.Size = new System.Drawing.Size(124, 25);
+            this.lblCompleted2.Size = new System.Drawing.Size(169, 25);
             this.lblCompleted2.TabIndex = 14;
-            this.lblCompleted2.Text = "Completed";
+            this.lblCompleted2.Text = "Complete Task";
             this.lblCompleted2.Click += new System.EventHandler(this.lblCompleted2_Click);
             // 
             // lblComplete1
@@ -127,9 +127,9 @@
             this.lblComplete1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.lblComplete1.Location = new System.Drawing.Point(447, 79);
             this.lblComplete1.Name = "lblComplete1";
-            this.lblComplete1.Size = new System.Drawing.Size(124, 25);
+            this.lblComplete1.Size = new System.Drawing.Size(169, 25);
             this.lblComplete1.TabIndex = 13;
-            this.lblComplete1.Text = "Completed";
+            this.lblComplete1.Text = "Complete Task";
             this.lblComplete1.Click += new System.EventHandler(this.lblComplete1_Click);
             // 
             // btnUpdate
