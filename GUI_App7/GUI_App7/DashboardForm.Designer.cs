@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.txtBMI = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -37,7 +43,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCalBurned = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.SummaryPage = new System.Windows.Forms.Button();
             this.txtCupsWater = new System.Windows.Forms.TextBox();
             this.txtHoursSlept = new System.Windows.Forms.TextBox();
             this.txtCalIntake = new System.Windows.Forms.TextBox();
@@ -45,12 +50,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +71,6 @@
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.txtCalBurned);
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.SummaryPage);
             this.panel4.Controls.Add(this.txtCupsWater);
             this.panel4.Controls.Add(this.txtHoursSlept);
             this.panel4.Controls.Add(this.txtCalIntake);
@@ -84,6 +82,72 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(719, 436);
             this.panel4.TabIndex = 13;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label14.Location = new System.Drawing.Point(436, 337);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(279, 18);
+            this.label14.TabIndex = 17;
+            this.label14.Text = "app is for educational purposes only.";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label13.Location = new System.Drawing.Point(436, 319);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(260, 18);
+            this.label13.TabIndex = 16;
+            this.label13.Text = "or medical advice. Your use of the";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label12.Location = new System.Drawing.Point(436, 301);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(264, 18);
+            this.label12.TabIndex = 15;
+            this.label12.Text = "to be a substitute for professional ";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label10.Location = new System.Drawing.Point(436, 283);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(269, 18);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "party sources and are not intended";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label9.Location = new System.Drawing.Point(436, 265);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(219, 18);
+            this.label9.TabIndex = 13;
+            this.label9.Text = "come from a variety of third";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.label6.Location = new System.Drawing.Point(330, 247);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(359, 18);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "DISCLAIMER: The information throught the app";
             // 
             // label19
             // 
@@ -167,21 +231,6 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Calories burned:";
             // 
-            // SummaryPage
-            // 
-            this.SummaryPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.SummaryPage.FlatAppearance.BorderSize = 0;
-            this.SummaryPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SummaryPage.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
-            this.SummaryPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.SummaryPage.Location = new System.Drawing.Point(270, 372);
-            this.SummaryPage.Name = "SummaryPage";
-            this.SummaryPage.Size = new System.Drawing.Size(173, 38);
-            this.SummaryPage.TabIndex = 2;
-            this.SummaryPage.Text = "Update Summary";
-            this.SummaryPage.UseVisualStyleBackColor = false;
-            this.SummaryPage.Click += new System.EventHandler(this.SummaryPage_Click);
-            // 
             // txtCupsWater
             // 
             this.txtCupsWater.Enabled = false;
@@ -253,72 +302,6 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Calorie intake:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(330, 247);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(359, 18);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "DISCLAIMER: The information throught the app";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label9.Location = new System.Drawing.Point(436, 265);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(219, 18);
-            this.label9.TabIndex = 13;
-            this.label9.Text = "come from a variety of third";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label10.Location = new System.Drawing.Point(436, 283);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(269, 18);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "party sources and are not intended";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label12.Location = new System.Drawing.Point(436, 301);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(264, 18);
-            this.label12.TabIndex = 15;
-            this.label12.Text = "to be a substitute for professional ";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label13.Location = new System.Drawing.Point(436, 319);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(260, 18);
-            this.label13.TabIndex = 16;
-            this.label13.Text = "or medical advice. Your use of the";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label14.Location = new System.Drawing.Point(436, 337);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(279, 18);
-            this.label14.TabIndex = 17;
-            this.label14.Text = "app is for educational purposes only.";
-            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -345,7 +328,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button SummaryPage;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtCalBurned;
         private System.Windows.Forms.TextBox txtWeight;

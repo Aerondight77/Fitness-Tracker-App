@@ -43,7 +43,7 @@ namespace GUI_App7
 
                 updateCommand.Parameters.AddWithValue("@amtWater", @amtWater);
                 updateCommand.Parameters.AddWithValue("@numCups", @numCups);
-                updateCommand.Parameters.AddWithValue("@amyToday", @amtToday);
+                updateCommand.Parameters.AddWithValue("@amtToday", @amtToday);
 
                 int row = objDBAccess.executeQuery(updateCommand);
 
