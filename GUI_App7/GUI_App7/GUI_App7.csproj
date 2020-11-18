@@ -98,6 +98,12 @@
     <Compile Include="DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="PrescriptionTrackerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrescriptionTrackerForm.Designer.cs">
+      <DependentUpon>PrescriptionTrackerForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="ProgressForm.cs">
       <SubType>Form</SubType>
@@ -136,6 +142,12 @@
     <Compile Include="WeightForm.Designer.cs">
       <DependentUpon>WeightForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutPlansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkoutPlansForm.Designer.cs">
+      <DependentUpon>WorkoutPlansForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AccountSettings.resx">
       <DependentUpon>AccountSettings.cs</DependentUpon>
     </EmbeddedResource>
@@ -153,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrescriptionTrackerForm.resx">
+      <DependentUpon>PrescriptionTrackerForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgressForm.resx">
       <DependentUpon>ProgressForm.cs</DependentUpon>
@@ -181,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WeightForm.resx">
       <DependentUpon>WeightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkoutPlansForm.resx">
+      <DependentUpon>WorkoutPlansForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
