@@ -168,7 +168,7 @@ namespace GUI_App7
             panelNav.Top = btnAccountSettings.Top;
             btnAccountSettings.BackColor = Color.FromArgb(245, 245, 245);
 
-            lbITitle.Text = "Daily Food Intake Calorie Tracking";
+            lbITitle.Text = "Account Settings";
             this.PnlFormLoader.Controls.Clear();
             AccountSettings myProfileForm_Vrb = new AccountSettings() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;

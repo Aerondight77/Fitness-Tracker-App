@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using System.IO;
 
 namespace GUI_App7
 {
@@ -16,8 +17,8 @@ namespace GUI_App7
         private static SqlDataAdapter adapter = new SqlDataAdapter();
         public SqlTransaction DbTran;
 
-        private static string strConnString = "Data Source=47.151.20.13, 1433\\SQL;Initial Catalog=Fitness App;User ID=sa;Password=masterchief2020";
-
+        readonly static StreamReader getLine = new StreamReader("querystring.txt");
+        private static string strConnString = getLine.ReadLine();
 
 
         public void createConn()

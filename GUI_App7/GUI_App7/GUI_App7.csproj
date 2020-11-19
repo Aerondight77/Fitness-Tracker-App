@@ -67,6 +67,12 @@
     <Compile Include="AccountSettings.Designer.cs">
       <DependentUpon>AccountSettings.cs</DependentUpon>
     </Compile>
+    <Compile Include="ActiveTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActiveTimeForm.Designer.cs">
+      <DependentUpon>ActiveTimeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
     <Compile Include="FoodForm.cs">
       <SubType>Form</SubType>
@@ -112,6 +118,12 @@
       <DependentUpon>ProgressForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecommendFoodForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecommendFoodForm.Designer.cs">
+      <DependentUpon>RecommendFoodForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     <Compile Include="WeightForm.Designer.cs">
       <DependentUpon>WeightForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkoutCalcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkoutCalcForm.Designer.cs">
+      <DependentUpon>WorkoutCalcForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkoutPlansForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="AccountSettings.resx">
       <DependentUpon>AccountSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActiveTimeForm.resx">
+      <DependentUpon>ActiveTimeForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FoodForm.resx">
       <DependentUpon>FoodForm.cs</DependentUpon>
@@ -182,6 +203,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RecommendFoodForm.resx">
+      <DependentUpon>RecommendFoodForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WeightForm.resx">
       <DependentUpon>WeightForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkoutCalcForm.resx">
+      <DependentUpon>WorkoutCalcForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkoutPlansForm.resx">
       <DependentUpon>WorkoutPlansForm.cs</DependentUpon>
