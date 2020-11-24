@@ -49,9 +49,9 @@
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(16, 18);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(345, 29);
+            this.label19.Size = new System.Drawing.Size(507, 29);
             this.label19.TabIndex = 13;
-            this.label19.Text = "Prescription/Vitamin Tracker";
+            this.label19.Text = "Track your prescriptions and vitamins here";
             // 
             // PrescriptionTrackerForm
             // 

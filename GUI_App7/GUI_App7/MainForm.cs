@@ -228,7 +228,6 @@ namespace GUI_App7
         private void btnLogout_Leave(object sender, EventArgs e)
         {
             btnLogout.BackColor = Color.FromArgb(255, 255, 255);
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -241,6 +240,101 @@ namespace GUI_App7
         {
             new LoginForm().Show();
             this.Hide();
+        }
+
+        private void btnActiveTime_Leave(object sender, EventArgs e)
+        {
+            btnActiveTime.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnActiveTime_Click_1(object sender, EventArgs e)
+        {
+            panelNav.Height = btnActiveTime.Height;
+            panelNav.Top = btnActiveTime.Top;
+            btnActiveTime.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Active Time";
+            this.PnlFormLoader.Controls.Clear();
+            ActiveTimeForm myProfileForm_Vrb = new ActiveTimeForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWorkoutPlans_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnWorkoutPlans.Height;
+            panelNav.Top = btnWorkoutPlans.Top;
+            btnWorkoutPlans.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Workout Recommendations";
+            this.PnlFormLoader.Controls.Clear();
+            WorkoutPlansForm myProfileForm_Vrb = new WorkoutPlansForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWorkoutPlans_Leave(object sender, EventArgs e)
+        {
+            btnWorkoutPlans.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnPrescripTrack_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnPrescripTrack.Height;
+            panelNav.Top = btnPrescripTrack.Top;
+            btnPrescripTrack.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Prescription/Vitamin Tracker";
+            this.PnlFormLoader.Controls.Clear();
+            PrescriptionTrackerForm myProfileForm_Vrb = new PrescriptionTrackerForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnPrescripTrack_Leave(object sender, EventArgs e)
+        {
+            btnPrescripTrack.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnRecomFood_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnRecomFood.Height;
+            panelNav.Top = btnRecomFood.Top;
+            btnRecomFood.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Food Recommendations";
+            this.PnlFormLoader.Controls.Clear();
+            RecommendFoodForm myProfileForm_Vrb = new RecommendFoodForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnRecomFood_Leave(object sender, EventArgs e)
+        {
+            btnRecomFood.BackColor = Color.FromArgb(255, 255, 255);
+        }
+
+        private void btnWorkoutCalc_Click(object sender, EventArgs e)
+        {
+            panelNav.Height = btnWorkoutCalc.Height;
+            panelNav.Top = btnWorkoutCalc.Top;
+            btnWorkoutCalc.BackColor = Color.FromArgb(245, 245, 245);
+
+            lbITitle.Text = "Workout Calculator";
+            this.PnlFormLoader.Controls.Clear();
+            WorkoutCalcForm myProfileForm_Vrb = new WorkoutCalcForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
+            myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;
+            this.PnlFormLoader.Controls.Add(myProfileForm_Vrb);
+            myProfileForm_Vrb.Show();
+        }
+
+        private void btnWorkoutCalc_Leave(object sender, EventArgs e)
+        {
+            btnWorkoutCalc.BackColor = Color.FromArgb(255, 255, 255);
         }
     }
 

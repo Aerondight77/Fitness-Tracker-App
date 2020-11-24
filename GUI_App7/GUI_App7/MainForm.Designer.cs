@@ -30,14 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnRecomFood = new System.Windows.Forms.Button();
+            this.btnPrescripTrack = new System.Windows.Forms.Button();
+            this.btnWorkoutPlans = new System.Windows.Forms.Button();
+            this.btnWorkoutCalc = new System.Windows.Forms.Button();
+            this.btnActiveTime = new System.Windows.Forms.Button();
+            this.panelNav = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAccountSettings = new System.Windows.Forms.Button();
             this.btnFood = new System.Windows.Forms.Button();
             this.btnWater = new System.Windows.Forms.Button();
             this.btnSleep = new System.Windows.Forms.Button();
             this.btn_Weight = new System.Windows.Forms.Button();
-            this.panelNav = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnProg = new System.Windows.Forms.Button();
             this.btnSummary = new System.Windows.Forms.Button();
@@ -57,7 +62,13 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btnRecomFood);
+            this.panel1.Controls.Add(this.btnPrescripTrack);
+            this.panel1.Controls.Add(this.btnWorkoutPlans);
+            this.panel1.Controls.Add(this.btnWorkoutCalc);
+            this.panel1.Controls.Add(this.btnActiveTime);
             this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnAccountSettings);
             this.panel1.Controls.Add(this.btnFood);
@@ -73,98 +84,98 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(186, 513);
+            this.panel1.Size = new System.Drawing.Size(186, 514);
             this.panel1.TabIndex = 2;
             // 
-            // btnAccountSettings
+            // btnRecomFood
             // 
-            this.btnAccountSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAccountSettings.FlatAppearance.BorderSize = 0;
-            this.btnAccountSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAccountSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAccountSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSettings.Image")));
-            this.btnAccountSettings.Location = new System.Drawing.Point(0, 411);
-            this.btnAccountSettings.Name = "btnAccountSettings";
-            this.btnAccountSettings.Size = new System.Drawing.Size(186, 42);
-            this.btnAccountSettings.TabIndex = 9;
-            this.btnAccountSettings.Text = "Account Settings";
-            this.btnAccountSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnAccountSettings.UseVisualStyleBackColor = true;
-            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
-            this.btnAccountSettings.Leave += new System.EventHandler(this.btnAccSettings_Leave);
+            this.btnRecomFood.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRecomFood.FlatAppearance.BorderSize = 0;
+            this.btnRecomFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecomFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRecomFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnRecomFood.Image = ((System.Drawing.Image)(resources.GetObject("btnRecomFood.Image")));
+            this.btnRecomFood.Location = new System.Drawing.Point(0, 621);
+            this.btnRecomFood.Name = "btnRecomFood";
+            this.btnRecomFood.Size = new System.Drawing.Size(169, 42);
+            this.btnRecomFood.TabIndex = 14;
+            this.btnRecomFood.Text = "Food Recommendations";
+            this.btnRecomFood.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnRecomFood.UseVisualStyleBackColor = true;
+            this.btnRecomFood.Click += new System.EventHandler(this.btnRecomFood_Click);
+            this.btnRecomFood.Leave += new System.EventHandler(this.btnRecomFood_Leave);
             // 
-            // btnFood
+            // btnPrescripTrack
             // 
-            this.btnFood.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFood.FlatAppearance.BorderSize = 0;
-            this.btnFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFood.Image")));
-            this.btnFood.Location = new System.Drawing.Point(0, 369);
-            this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(186, 42);
-            this.btnFood.TabIndex = 8;
-            this.btnFood.Text = "Food Intake";
-            this.btnFood.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnFood.UseVisualStyleBackColor = true;
-            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
-            this.btnFood.Leave += new System.EventHandler(this.btnFood_Leave);
+            this.btnPrescripTrack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPrescripTrack.FlatAppearance.BorderSize = 0;
+            this.btnPrescripTrack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrescripTrack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrescripTrack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnPrescripTrack.Image = ((System.Drawing.Image)(resources.GetObject("btnPrescripTrack.Image")));
+            this.btnPrescripTrack.Location = new System.Drawing.Point(0, 579);
+            this.btnPrescripTrack.Name = "btnPrescripTrack";
+            this.btnPrescripTrack.Size = new System.Drawing.Size(169, 42);
+            this.btnPrescripTrack.TabIndex = 13;
+            this.btnPrescripTrack.Text = "Prescription Tracker";
+            this.btnPrescripTrack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnPrescripTrack.UseVisualStyleBackColor = true;
+            this.btnPrescripTrack.Click += new System.EventHandler(this.btnPrescripTrack_Click);
+            this.btnPrescripTrack.Leave += new System.EventHandler(this.btnPrescripTrack_Leave);
             // 
-            // btnWater
+            // btnWorkoutPlans
             // 
-            this.btnWater.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnWater.FlatAppearance.BorderSize = 0;
-            this.btnWater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnWater.Image = ((System.Drawing.Image)(resources.GetObject("btnWater.Image")));
-            this.btnWater.Location = new System.Drawing.Point(0, 327);
-            this.btnWater.Name = "btnWater";
-            this.btnWater.Size = new System.Drawing.Size(186, 42);
-            this.btnWater.TabIndex = 7;
-            this.btnWater.Text = "Water";
-            this.btnWater.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnWater.UseVisualStyleBackColor = true;
-            this.btnWater.Click += new System.EventHandler(this.btnWater_Click);
-            this.btnWater.Leave += new System.EventHandler(this.btnWater_Leave);
+            this.btnWorkoutPlans.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWorkoutPlans.FlatAppearance.BorderSize = 0;
+            this.btnWorkoutPlans.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWorkoutPlans.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWorkoutPlans.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnWorkoutPlans.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkoutPlans.Image")));
+            this.btnWorkoutPlans.Location = new System.Drawing.Point(0, 537);
+            this.btnWorkoutPlans.Name = "btnWorkoutPlans";
+            this.btnWorkoutPlans.Size = new System.Drawing.Size(169, 42);
+            this.btnWorkoutPlans.TabIndex = 12;
+            this.btnWorkoutPlans.Text = "Workout Plans";
+            this.btnWorkoutPlans.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnWorkoutPlans.UseVisualStyleBackColor = true;
+            this.btnWorkoutPlans.Click += new System.EventHandler(this.btnWorkoutPlans_Click);
+            this.btnWorkoutPlans.Leave += new System.EventHandler(this.btnWorkoutPlans_Leave);
             // 
-            // btnSleep
+            // btnWorkoutCalc
             // 
-            this.btnSleep.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSleep.FlatAppearance.BorderSize = 0;
-            this.btnSleep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSleep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnSleep.Image = ((System.Drawing.Image)(resources.GetObject("btnSleep.Image")));
-            this.btnSleep.Location = new System.Drawing.Point(0, 285);
-            this.btnSleep.Name = "btnSleep";
-            this.btnSleep.Size = new System.Drawing.Size(186, 42);
-            this.btnSleep.TabIndex = 6;
-            this.btnSleep.Text = "Sleep";
-            this.btnSleep.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnSleep.UseVisualStyleBackColor = true;
-            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
-            this.btnSleep.Leave += new System.EventHandler(this.btnSleep_Leave);
+            this.btnWorkoutCalc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWorkoutCalc.FlatAppearance.BorderSize = 0;
+            this.btnWorkoutCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWorkoutCalc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWorkoutCalc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnWorkoutCalc.Image = ((System.Drawing.Image)(resources.GetObject("btnWorkoutCalc.Image")));
+            this.btnWorkoutCalc.Location = new System.Drawing.Point(0, 495);
+            this.btnWorkoutCalc.Name = "btnWorkoutCalc";
+            this.btnWorkoutCalc.Size = new System.Drawing.Size(169, 42);
+            this.btnWorkoutCalc.TabIndex = 11;
+            this.btnWorkoutCalc.Text = "Workout Calculator";
+            this.btnWorkoutCalc.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnWorkoutCalc.UseVisualStyleBackColor = true;
+            this.btnWorkoutCalc.Click += new System.EventHandler(this.btnWorkoutCalc_Click);
+            this.btnWorkoutCalc.Leave += new System.EventHandler(this.btnWorkoutCalc_Leave);
             // 
-            // btn_Weight
+            // btnActiveTime
             // 
-            this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_Weight.FlatAppearance.BorderSize = 0;
-            this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Weight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btn_Weight.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight.Image")));
-            this.btn_Weight.Location = new System.Drawing.Point(0, 243);
-            this.btn_Weight.Name = "btn_Weight";
-            this.btn_Weight.Size = new System.Drawing.Size(186, 42);
-            this.btn_Weight.TabIndex = 4;
-            this.btn_Weight.Text = "Weight";
-            this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btn_Weight.UseVisualStyleBackColor = true;
-            this.btn_Weight.Click += new System.EventHandler(this.button2_Click);
-            this.btn_Weight.Leave += new System.EventHandler(this.btnWeight_Leave);
+            this.btnActiveTime.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnActiveTime.FlatAppearance.BorderSize = 0;
+            this.btnActiveTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnActiveTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActiveTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnActiveTime.Image = ((System.Drawing.Image)(resources.GetObject("btnActiveTime.Image")));
+            this.btnActiveTime.Location = new System.Drawing.Point(0, 453);
+            this.btnActiveTime.Name = "btnActiveTime";
+            this.btnActiveTime.Size = new System.Drawing.Size(169, 42);
+            this.btnActiveTime.TabIndex = 10;
+            this.btnActiveTime.Text = "Active Time";
+            this.btnActiveTime.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnActiveTime.UseVisualStyleBackColor = true;
+            this.btnActiveTime.Click += new System.EventHandler(this.btnActiveTime_Click_1);
+            this.btnActiveTime.Leave += new System.EventHandler(this.btnActiveTime_Leave);
             // 
             // panelNav
             // 
@@ -173,7 +184,7 @@
             this.panelNav.Controls.Add(this.label1);
             this.panelNav.Location = new System.Drawing.Point(0, 81);
             this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(5, 429);
+            this.panelNav.Size = new System.Drawing.Size(10, 582);
             this.panelNav.TabIndex = 3;
             // 
             // label2
@@ -198,6 +209,96 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "User Name";
             // 
+            // btnAccountSettings
+            // 
+            this.btnAccountSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAccountSettings.FlatAppearance.BorderSize = 0;
+            this.btnAccountSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAccountSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAccountSettings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnAccountSettings.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountSettings.Image")));
+            this.btnAccountSettings.Location = new System.Drawing.Point(0, 411);
+            this.btnAccountSettings.Name = "btnAccountSettings";
+            this.btnAccountSettings.Size = new System.Drawing.Size(169, 42);
+            this.btnAccountSettings.TabIndex = 9;
+            this.btnAccountSettings.Text = "Account Settings";
+            this.btnAccountSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnAccountSettings.UseVisualStyleBackColor = true;
+            this.btnAccountSettings.Click += new System.EventHandler(this.btnAccountSettings_Click);
+            this.btnAccountSettings.Leave += new System.EventHandler(this.btnAccSettings_Leave);
+            // 
+            // btnFood
+            // 
+            this.btnFood.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFood.FlatAppearance.BorderSize = 0;
+            this.btnFood.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnFood.Image = ((System.Drawing.Image)(resources.GetObject("btnFood.Image")));
+            this.btnFood.Location = new System.Drawing.Point(0, 369);
+            this.btnFood.Name = "btnFood";
+            this.btnFood.Size = new System.Drawing.Size(169, 42);
+            this.btnFood.TabIndex = 8;
+            this.btnFood.Text = "Food Intake";
+            this.btnFood.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnFood.UseVisualStyleBackColor = true;
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
+            this.btnFood.Leave += new System.EventHandler(this.btnFood_Leave);
+            // 
+            // btnWater
+            // 
+            this.btnWater.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWater.FlatAppearance.BorderSize = 0;
+            this.btnWater.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWater.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWater.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnWater.Image = ((System.Drawing.Image)(resources.GetObject("btnWater.Image")));
+            this.btnWater.Location = new System.Drawing.Point(0, 327);
+            this.btnWater.Name = "btnWater";
+            this.btnWater.Size = new System.Drawing.Size(169, 42);
+            this.btnWater.TabIndex = 7;
+            this.btnWater.Text = "Water";
+            this.btnWater.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnWater.UseVisualStyleBackColor = true;
+            this.btnWater.Click += new System.EventHandler(this.btnWater_Click);
+            this.btnWater.Leave += new System.EventHandler(this.btnWater_Leave);
+            // 
+            // btnSleep
+            // 
+            this.btnSleep.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSleep.FlatAppearance.BorderSize = 0;
+            this.btnSleep.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSleep.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSleep.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnSleep.Image = ((System.Drawing.Image)(resources.GetObject("btnSleep.Image")));
+            this.btnSleep.Location = new System.Drawing.Point(0, 285);
+            this.btnSleep.Name = "btnSleep";
+            this.btnSleep.Size = new System.Drawing.Size(169, 42);
+            this.btnSleep.TabIndex = 6;
+            this.btnSleep.Text = "Sleep";
+            this.btnSleep.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnSleep.UseVisualStyleBackColor = true;
+            this.btnSleep.Click += new System.EventHandler(this.btnSleep_Click);
+            this.btnSleep.Leave += new System.EventHandler(this.btnSleep_Leave);
+            // 
+            // btn_Weight
+            // 
+            this.btn_Weight.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_Weight.FlatAppearance.BorderSize = 0;
+            this.btn_Weight.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Weight.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Weight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_Weight.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight.Image")));
+            this.btn_Weight.Location = new System.Drawing.Point(0, 243);
+            this.btn_Weight.Name = "btn_Weight";
+            this.btn_Weight.Size = new System.Drawing.Size(169, 42);
+            this.btn_Weight.TabIndex = 4;
+            this.btn_Weight.Text = "Weight";
+            this.btn_Weight.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btn_Weight.UseVisualStyleBackColor = true;
+            this.btn_Weight.Click += new System.EventHandler(this.button2_Click);
+            this.btn_Weight.Leave += new System.EventHandler(this.btnWeight_Leave);
+            // 
             // btnLogout
             // 
             this.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -206,9 +307,9 @@
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
-            this.btnLogout.Location = new System.Drawing.Point(0, 471);
+            this.btnLogout.Location = new System.Drawing.Point(0, 663);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(186, 42);
+            this.btnLogout.Size = new System.Drawing.Size(169, 42);
             this.btnLogout.TabIndex = 4;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -226,7 +327,7 @@
             this.btnProg.Image = ((System.Drawing.Image)(resources.GetObject("btnProg.Image")));
             this.btnProg.Location = new System.Drawing.Point(0, 201);
             this.btnProg.Name = "btnProg";
-            this.btnProg.Size = new System.Drawing.Size(186, 42);
+            this.btnProg.Size = new System.Drawing.Size(169, 42);
             this.btnProg.TabIndex = 4;
             this.btnProg.Text = "Progress";
             this.btnProg.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -244,7 +345,7 @@
             this.btnSummary.Image = ((System.Drawing.Image)(resources.GetObject("btnSummary.Image")));
             this.btnSummary.Location = new System.Drawing.Point(0, 159);
             this.btnSummary.Name = "btnSummary";
-            this.btnSummary.Size = new System.Drawing.Size(186, 42);
+            this.btnSummary.Size = new System.Drawing.Size(169, 42);
             this.btnSummary.TabIndex = 4;
             this.btnSummary.Text = "To-Do List";
             this.btnSummary.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -262,7 +363,7 @@
             this.btnProfile.Image = ((System.Drawing.Image)(resources.GetObject("btnProfile.Image")));
             this.btnProfile.Location = new System.Drawing.Point(0, 117);
             this.btnProfile.Name = "btnProfile";
-            this.btnProfile.Size = new System.Drawing.Size(186, 42);
+            this.btnProfile.Size = new System.Drawing.Size(169, 42);
             this.btnProfile.TabIndex = 4;
             this.btnProfile.Text = "My Profile";
             this.btnProfile.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -280,7 +381,7 @@
             this.BtnDashboard.Image = ((System.Drawing.Image)(resources.GetObject("BtnDashboard.Image")));
             this.BtnDashboard.Location = new System.Drawing.Point(0, 75);
             this.BtnDashboard.Name = "BtnDashboard";
-            this.BtnDashboard.Size = new System.Drawing.Size(186, 42);
+            this.BtnDashboard.Size = new System.Drawing.Size(169, 42);
             this.BtnDashboard.TabIndex = 4;
             this.BtnDashboard.Text = "Summary";
             this.BtnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -298,7 +399,7 @@
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(186, 75);
+            this.panel2.Size = new System.Drawing.Size(169, 75);
             this.panel2.TabIndex = 3;
             // 
             // label5
@@ -359,7 +460,7 @@
             // PnlFormLoader
             // 
             this.PnlFormLoader.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.PnlFormLoader.Location = new System.Drawing.Point(186, 47);
+            this.PnlFormLoader.Location = new System.Drawing.Point(186, 48);
             this.PnlFormLoader.Name = "PnlFormLoader";
             this.PnlFormLoader.Size = new System.Drawing.Size(743, 466);
             this.PnlFormLoader.TabIndex = 6;
@@ -369,7 +470,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.ClientSize = new System.Drawing.Size(929, 513);
+            this.ClientSize = new System.Drawing.Size(929, 514);
             this.Controls.Add(this.PnlFormLoader);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lbITitle);
@@ -413,6 +514,11 @@
         private System.Windows.Forms.Button btnWater;
         private System.Windows.Forms.Button btnFood;
         private System.Windows.Forms.Button btnAccountSettings;
+        private System.Windows.Forms.Button btnActiveTime;
+        private System.Windows.Forms.Button btnRecomFood;
+        private System.Windows.Forms.Button btnPrescripTrack;
+        private System.Windows.Forms.Button btnWorkoutPlans;
+        private System.Windows.Forms.Button btnWorkoutCalc;
     }
 }
 

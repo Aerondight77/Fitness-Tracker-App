@@ -49,9 +49,9 @@
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(18, 17);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(333, 29);
+            this.label19.Size = new System.Drawing.Size(431, 29);
             this.label19.TabIndex = 12;
-            this.label19.Text = "Workout Recommendations";
+            this.label19.Text = "Recommended workouts for the day";
             // 
             // WorkoutPlansForm
             // 
