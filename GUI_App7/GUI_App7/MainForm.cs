@@ -286,7 +286,7 @@ namespace GUI_App7
             panelNav.Top = btnPrescripTrack.Top;
             btnPrescripTrack.BackColor = Color.FromArgb(245, 245, 245);
 
-            lbITitle.Text = "Prescription/Vitamin Tracker";
+            lbITitle.Text = "Pills tracking";
             this.PnlFormLoader.Controls.Clear();
             PrescriptionTrackerForm myProfileForm_Vrb = new PrescriptionTrackerForm() { Dock = DockStyle.Fill, TopLevel = false, TopMost = true };
             myProfileForm_Vrb.FormBorderStyle = FormBorderStyle.None;

@@ -117,7 +117,7 @@
             this.btnPrescripTrack.Name = "btnPrescripTrack";
             this.btnPrescripTrack.Size = new System.Drawing.Size(169, 42);
             this.btnPrescripTrack.TabIndex = 13;
-            this.btnPrescripTrack.Text = "Prescription Tracker";
+            this.btnPrescripTrack.Text = "Pills Tracker";
             this.btnPrescripTrack.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnPrescripTrack.UseVisualStyleBackColor = true;
             this.btnPrescripTrack.Click += new System.EventHandler(this.btnPrescripTrack_Click);
