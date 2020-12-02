@@ -492,7 +492,6 @@
             this.label32.Size = new System.Drawing.Size(86, 46);
             this.label32.TabIndex = 5;
             this.label32.Text = "500";
-            this.label32.Click += new System.EventHandler(this.label32_Click);
             // 
             // label34
             // 
@@ -734,7 +733,6 @@
             this.label18.Size = new System.Drawing.Size(400, 24);
             this.label18.TabIndex = 1;
             this.label18.Text = "150 Jumping Jacks, 100 Crunches, 50 Leg Lifts";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label20
             // 
@@ -830,7 +828,6 @@
             this.label6.Size = new System.Drawing.Size(278, 24);
             this.label6.TabIndex = 0;
             this.label6.Text = "Light Workout (Gym Equipment)";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // panelMenu1
             // 

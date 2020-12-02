@@ -73,6 +73,42 @@
     <Compile Include="ActiveTimeForm.Designer.cs">
       <DependentUpon>ActiveTimeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlfredoChicken.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlfredoChicken.Designer.cs">
+      <DependentUpon>AlfredoChicken.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvocadoTomatoToast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvocadoTomatoToast.Designer.cs">
+      <DependentUpon>AvocadoTomatoToast.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvocTunaWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvocTunaWrap.Designer.cs">
+      <DependentUpon>AvocTunaWrap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BananaPecan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BananaPecan.Designer.cs">
+      <DependentUpon>BananaPecan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BerrySMB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BerrySMB.Designer.cs">
+      <DependentUpon>BerrySMB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="breakfastWrap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="breakfastWrap.Designer.cs">
+      <DependentUpon>breakfastWrap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBAccess.cs" />
     <Compile Include="FoodForm.cs">
       <SubType>Form</SubType>
@@ -103,6 +139,12 @@
     </Compile>
     <Compile Include="DashboardForm.Designer.cs">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PestoChickenPastacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PestoChickenPastacs.Designer.cs">
+      <DependentUpon>PestoChickenPastacs.cs</DependentUpon>
     </Compile>
     <Compile Include="PrescriptionTrackerForm.cs">
       <SubType>Form</SubType>
@@ -136,11 +178,29 @@
     <Compile Include="SleepForm.Designer.cs">
       <DependentUpon>SleepForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SouthwesternSalad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SouthwesternSalad.Designer.cs">
+      <DependentUpon>SouthwesternSalad.cs</DependentUpon>
+    </Compile>
     <Compile Include="SummaryForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SummaryForm.Designer.cs">
       <DependentUpon>SummaryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TacoSalad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TacoSalad.Designer.cs">
+      <DependentUpon>TacoSalad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TurkeyTacos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TurkeyTacos.Designer.cs">
+      <DependentUpon>TurkeyTacos.cs</DependentUpon>
     </Compile>
     <Compile Include="WaterForm.cs">
       <SubType>Form</SubType>
@@ -172,6 +232,24 @@
     <EmbeddedResource Include="ActiveTimeForm.resx">
       <DependentUpon>ActiveTimeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AlfredoChicken.resx">
+      <DependentUpon>AlfredoChicken.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvocadoTomatoToast.resx">
+      <DependentUpon>AvocadoTomatoToast.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvocTunaWrap.resx">
+      <DependentUpon>AvocTunaWrap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BananaPecan.resx">
+      <DependentUpon>BananaPecan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BerrySMB.resx">
+      <DependentUpon>BerrySMB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="breakfastWrap.resx">
+      <DependentUpon>breakfastWrap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FoodForm.resx">
       <DependentUpon>FoodForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -186,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DashboardForm.resx">
       <DependentUpon>DashboardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PestoChickenPastacs.resx">
+      <DependentUpon>PestoChickenPastacs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PrescriptionTrackerForm.resx">
       <DependentUpon>PrescriptionTrackerForm.cs</DependentUpon>
@@ -212,8 +293,17 @@
     <EmbeddedResource Include="SleepForm.resx">
       <DependentUpon>SleepForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SouthwesternSalad.resx">
+      <DependentUpon>SouthwesternSalad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SummaryForm.resx">
       <DependentUpon>SummaryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TacoSalad.resx">
+      <DependentUpon>TacoSalad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TurkeyTacos.resx">
+      <DependentUpon>TurkeyTacos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WaterForm.resx">
       <DependentUpon>WaterForm.cs</DependentUpon>
