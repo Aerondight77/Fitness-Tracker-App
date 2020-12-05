@@ -34,11 +34,11 @@ namespace GUI_App7
         private void DashboardForm_Load(object sender, EventArgs e)
         {
             // Add more later on when others are implemented.
-            int numCups, calBurned, weight, calIntake;
+            int numCups, calBurned, weight, calIntake, activeTime;
             float bmi, sleep;
 
             // Add more later on when others are implemented.
-            string query = "SELECT Weight,BMI,Sleep,NoOfCups,CalBurnedTotal,CalIntakeTotal FROM Login_Table where ID = '" + LoginForm.id + "'";
+            string query = "SELECT Weight,BMI,Sleep,NoOfCups,CalBurnedTotal,CalIntakeTotal,ActiveTime FROM Login_Table where ID = '" + LoginForm.id + "'";
 
             objDBAccess.readDatathroughAdapter(query, dtLogin_Table);
 
@@ -50,6 +50,7 @@ namespace GUI_App7
                 bmi = int.Parse(dtLogin_Table.Rows[0]["BMI"].ToString());
                 sleep = int.Parse(dtLogin_Table.Rows[0]["Sleep"].ToString());
                 calIntake = int.Parse(dtLogin_Table.Rows[0]["CalIntakeTotal"].ToString());
+                activeTime = int.Parse(dtLogin_Table.Rows[0]["ActiveTime"].ToString());
 
                 objDBAccess.closeConn();
 
@@ -59,6 +60,7 @@ namespace GUI_App7
                 txtBMI.AppendText(bmi.ToString());
                 txtHoursSlept.AppendText(sleep.ToString());
                 txtCalIntake.AppendText(calIntake.ToString());
+                txtActiveTime.AppendText(activeTime.ToString());
             }
             else
             {

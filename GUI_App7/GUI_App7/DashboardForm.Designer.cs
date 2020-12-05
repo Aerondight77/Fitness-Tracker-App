@@ -50,6 +50,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.txtActiveTime = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +59,8 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel4.Controls.Add(this.txtActiveTime);
+            this.panel4.Controls.Add(this.label15);
             this.panel4.Controls.Add(this.label14);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Controls.Add(this.label12);
@@ -145,9 +149,9 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(330, 247);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(359, 18);
+            this.label6.Size = new System.Drawing.Size(378, 18);
             this.label6.TabIndex = 12;
-            this.label6.Text = "DISCLAIMER: The information throught the app";
+            this.label6.Text = "DISCLAIMER: The information throughout the app";
             // 
             // label19
             // 
@@ -163,7 +167,7 @@
             // txtBMI
             // 
             this.txtBMI.Enabled = false;
-            this.txtBMI.Location = new System.Drawing.Point(439, 60);
+            this.txtBMI.Location = new System.Drawing.Point(479, 60);
             this.txtBMI.Multiline = true;
             this.txtBMI.Name = "txtBMI";
             this.txtBMI.Size = new System.Drawing.Size(107, 20);
@@ -302,6 +306,26 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Calorie intake:";
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(375, 110);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(98, 18);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Active time:";
+            // 
+            // txtActiveTime
+            // 
+            this.txtActiveTime.Enabled = false;
+            this.txtActiveTime.Location = new System.Drawing.Point(479, 110);
+            this.txtActiveTime.Multiline = true;
+            this.txtActiveTime.Name = "txtActiveTime";
+            this.txtActiveTime.Size = new System.Drawing.Size(107, 20);
+            this.txtActiveTime.TabIndex = 19;
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,5 +366,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtActiveTime;
+        private System.Windows.Forms.Label label15;
     }
 }
