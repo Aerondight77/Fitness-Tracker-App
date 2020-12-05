@@ -64,12 +64,12 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnRecomFood);
             this.panel1.Controls.Add(this.btnPrescripTrack);
             this.panel1.Controls.Add(this.btnWorkoutPlans);
             this.panel1.Controls.Add(this.btnWorkoutCalc);
             this.panel1.Controls.Add(this.btnActiveTime);
-            this.panel1.Controls.Add(this.panelNav);
             this.panel1.Controls.Add(this.btnAccountSettings);
             this.panel1.Controls.Add(this.btnFood);
             this.panel1.Controls.Add(this.btnWater);

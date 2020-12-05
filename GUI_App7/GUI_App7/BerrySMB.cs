@@ -16,10 +16,5 @@ namespace GUI_App7
         {
             InitializeComponent();
         }
-
-        private void BackBnt_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

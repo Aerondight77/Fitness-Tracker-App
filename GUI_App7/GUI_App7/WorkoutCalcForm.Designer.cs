@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
             this.btnCalculate = new System.Windows.Forms.Button();
             this.txtTotalWorkout = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -46,7 +47,6 @@
             this.txtPushUps = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,13 +76,24 @@
             this.panel1.Size = new System.Drawing.Size(718, 441);
             this.panel1.TabIndex = 0;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(531, 322);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 23);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "calories";
+            // 
             // btnCalculate
             // 
             this.btnCalculate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.btnCalculate.FlatAppearance.BorderSize = 0;
             this.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCalculate.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btnCalculate.ForeColor = System.Drawing.Color.White;
             this.btnCalculate.Location = new System.Drawing.Point(272, 376);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(151, 41);
@@ -258,17 +269,6 @@
             this.label18.Size = new System.Drawing.Size(175, 25);
             this.label18.TabIndex = 18;
             this.label18.Text = "Time spent for:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(531, 322);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 23);
-            this.label12.TabIndex = 35;
-            this.label12.Text = "calories";
             // 
             // WorkoutCalcForm
             // 

@@ -38,7 +38,6 @@ namespace GUI_App7
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.BackBnt = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -47,7 +46,6 @@ namespace GUI_App7
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.BackBnt);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label19);
@@ -63,7 +61,7 @@ namespace GUI_App7
             this.panel4.Controls.Add(this.richTextBox1);
             this.panel4.Location = new System.Drawing.Point(14, 50);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(173, 314);
+            this.panel4.Size = new System.Drawing.Size(173, 340);
             this.panel4.TabIndex = 18;
             // 
             // textBox12
@@ -84,9 +82,9 @@ namespace GUI_App7
             this.richTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.Color.White;
-            this.richTextBox1.Location = new System.Drawing.Point(9, 40);
+            this.richTextBox1.Location = new System.Drawing.Point(6, 40);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(161, 247);
+            this.richTextBox1.Size = new System.Drawing.Size(161, 283);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "½ cup strawberry\n\n½ cup raspberry\n\n1 cup blackberry\n\n1 banana, sliced\n\n½ cup gree" +
     "k yogurt\n\n¼ cup almond milk, or soy milk\n\n¼ cup peanut butter";
@@ -98,7 +96,7 @@ namespace GUI_App7
             this.panel3.Controls.Add(this.richTextBox2);
             this.panel3.Location = new System.Drawing.Point(208, 50);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(474, 314);
+            this.panel3.Size = new System.Drawing.Size(474, 340);
             this.panel3.TabIndex = 18;
             // 
             // textBox1
@@ -120,7 +118,7 @@ namespace GUI_App7
             this.richTextBox2.ForeColor = System.Drawing.Color.White;
             this.richTextBox2.Location = new System.Drawing.Point(19, 40);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(440, 247);
+            this.richTextBox2.Size = new System.Drawing.Size(440, 283);
             this.richTextBox2.TabIndex = 3;
             this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
             // 
@@ -134,21 +132,6 @@ namespace GUI_App7
             this.label19.Size = new System.Drawing.Size(258, 29);
             this.label19.TabIndex = 16;
             this.label19.Text = "Berry Smoothie Bowl";
-            // 
-            // BackBnt
-            // 
-            this.BackBnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.BackBnt.FlatAppearance.BorderSize = 0;
-            this.BackBnt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackBnt.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackBnt.ForeColor = System.Drawing.Color.White;
-            this.BackBnt.Location = new System.Drawing.Point(330, 373);
-            this.BackBnt.Name = "BackBnt";
-            this.BackBnt.Size = new System.Drawing.Size(120, 34);
-            this.BackBnt.TabIndex = 26;
-            this.BackBnt.Text = "Back";
-            this.BackBnt.UseVisualStyleBackColor = false;
-            this.BackBnt.Click += new System.EventHandler(this.BackBnt_Click);
             // 
             // BerrySMB
             // 
@@ -181,6 +164,5 @@ namespace GUI_App7
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button BackBnt;
     }
 }

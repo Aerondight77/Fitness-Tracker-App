@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.txtNewUsername = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtCurrentUsername = new System.Windows.Forms.TextBox();
             this.btnUpdateUsername = new System.Windows.Forms.Button();
+            this.txtCurrentUsername = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtNewUsername = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtNewPass1 = new System.Windows.Forms.TextBox();
-            this.txtNewPass2 = new System.Windows.Forms.TextBox();
-            this.btnUpdatePassword = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.btnUpdatePassword = new System.Windows.Forms.Button();
+            this.txtNewPass2 = new System.Windows.Forms.TextBox();
+            this.txtNewPass1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -63,6 +63,76 @@
             this.panel1.Size = new System.Drawing.Size(360, 402);
             this.panel1.TabIndex = 0;
             // 
+            // btnUpdateUsername
+            // 
+            this.btnUpdateUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnUpdateUsername.FlatAppearance.BorderSize = 0;
+            this.btnUpdateUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdateUsername.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnUpdateUsername.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateUsername.Location = new System.Drawing.Point(87, 319);
+            this.btnUpdateUsername.Name = "btnUpdateUsername";
+            this.btnUpdateUsername.Size = new System.Drawing.Size(173, 38);
+            this.btnUpdateUsername.TabIndex = 26;
+            this.btnUpdateUsername.Text = "Update Username";
+            this.btnUpdateUsername.UseVisualStyleBackColor = false;
+            this.btnUpdateUsername.Click += new System.EventHandler(this.btnUpdateUsername_Click);
+            // 
+            // txtCurrentUsername
+            // 
+            this.txtCurrentUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.txtCurrentUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCurrentUsername.Enabled = false;
+            this.txtCurrentUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCurrentUsername.ForeColor = System.Drawing.Color.White;
+            this.txtCurrentUsername.Location = new System.Drawing.Point(114, 76);
+            this.txtCurrentUsername.Multiline = true;
+            this.txtCurrentUsername.Name = "txtCurrentUsername";
+            this.txtCurrentUsername.Size = new System.Drawing.Size(228, 47);
+            this.txtCurrentUsername.TabIndex = 25;
+            this.txtCurrentUsername.Text = "_";
+            this.txtCurrentUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(19, 94);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 18);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "username:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(19, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(64, 18);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Current";
+            // 
+            // txtNewUsername
+            // 
+            this.txtNewUsername.Location = new System.Drawing.Point(152, 149);
+            this.txtNewUsername.Name = "txtNewUsername";
+            this.txtNewUsername.Size = new System.Drawing.Size(190, 20);
+            this.txtNewUsername.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(19, 148);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(127, 18);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "New username:";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
@@ -73,76 +143,6 @@
             this.label19.Size = new System.Drawing.Size(223, 29);
             this.label19.TabIndex = 1;
             this.label19.Text = "Update Username";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label11.Location = new System.Drawing.Point(19, 148);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(127, 18);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "New username:";
-            // 
-            // txtNewUsername
-            // 
-            this.txtNewUsername.Location = new System.Drawing.Point(152, 149);
-            this.txtNewUsername.Name = "txtNewUsername";
-            this.txtNewUsername.Size = new System.Drawing.Size(190, 20);
-            this.txtNewUsername.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label1.Location = new System.Drawing.Point(19, 76);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Current";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label2.Location = new System.Drawing.Point(19, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "username:";
-            // 
-            // txtCurrentUsername
-            // 
-            this.txtCurrentUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.txtCurrentUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCurrentUsername.Enabled = false;
-            this.txtCurrentUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCurrentUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.txtCurrentUsername.Location = new System.Drawing.Point(114, 76);
-            this.txtCurrentUsername.Multiline = true;
-            this.txtCurrentUsername.Name = "txtCurrentUsername";
-            this.txtCurrentUsername.Size = new System.Drawing.Size(228, 47);
-            this.txtCurrentUsername.TabIndex = 25;
-            this.txtCurrentUsername.Text = "_";
-            this.txtCurrentUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // btnUpdateUsername
-            // 
-            this.btnUpdateUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnUpdateUsername.FlatAppearance.BorderSize = 0;
-            this.btnUpdateUsername.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdateUsername.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnUpdateUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnUpdateUsername.Location = new System.Drawing.Point(87, 319);
-            this.btnUpdateUsername.Name = "btnUpdateUsername";
-            this.btnUpdateUsername.Size = new System.Drawing.Size(173, 38);
-            this.btnUpdateUsername.TabIndex = 26;
-            this.btnUpdateUsername.Text = "Update Username";
-            this.btnUpdateUsername.UseVisualStyleBackColor = false;
-            this.btnUpdateUsername.Click += new System.EventHandler(this.btnUpdateUsername_Click);
             // 
             // panel2
             // 
@@ -159,70 +159,6 @@
             this.panel2.Size = new System.Drawing.Size(335, 402);
             this.panel2.TabIndex = 1;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label3.Location = new System.Drawing.Point(13, 76);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "New password:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label4.Location = new System.Drawing.Point(13, 148);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 18);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Confirm new";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.label5.Location = new System.Drawing.Point(13, 166);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 18);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "password:";
-            // 
-            // txtNewPass1
-            // 
-            this.txtNewPass1.Location = new System.Drawing.Point(136, 73);
-            this.txtNewPass1.Name = "txtNewPass1";
-            this.txtNewPass1.PasswordChar = '*';
-            this.txtNewPass1.Size = new System.Drawing.Size(184, 20);
-            this.txtNewPass1.TabIndex = 6;
-            // 
-            // txtNewPass2
-            // 
-            this.txtNewPass2.Location = new System.Drawing.Point(136, 164);
-            this.txtNewPass2.Name = "txtNewPass2";
-            this.txtNewPass2.PasswordChar = '*';
-            this.txtNewPass2.Size = new System.Drawing.Size(184, 20);
-            this.txtNewPass2.TabIndex = 7;
-            // 
-            // btnUpdatePassword
-            // 
-            this.btnUpdatePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
-            this.btnUpdatePassword.FlatAppearance.BorderSize = 0;
-            this.btnUpdatePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdatePassword.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnUpdatePassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btnUpdatePassword.Location = new System.Drawing.Point(93, 319);
-            this.btnUpdatePassword.Name = "btnUpdatePassword";
-            this.btnUpdatePassword.Size = new System.Drawing.Size(173, 38);
-            this.btnUpdatePassword.TabIndex = 27;
-            this.btnUpdatePassword.Text = "Update Password";
-            this.btnUpdatePassword.UseVisualStyleBackColor = false;
-            this.btnUpdatePassword.Click += new System.EventHandler(this.btnUpdatePassword_Click);
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -233,6 +169,70 @@
             this.label6.Size = new System.Drawing.Size(219, 29);
             this.label6.TabIndex = 28;
             this.label6.Text = "Update Password";
+            // 
+            // btnUpdatePassword
+            // 
+            this.btnUpdatePassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
+            this.btnUpdatePassword.FlatAppearance.BorderSize = 0;
+            this.btnUpdatePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdatePassword.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnUpdatePassword.ForeColor = System.Drawing.Color.White;
+            this.btnUpdatePassword.Location = new System.Drawing.Point(93, 319);
+            this.btnUpdatePassword.Name = "btnUpdatePassword";
+            this.btnUpdatePassword.Size = new System.Drawing.Size(173, 38);
+            this.btnUpdatePassword.TabIndex = 27;
+            this.btnUpdatePassword.Text = "Update Password";
+            this.btnUpdatePassword.UseVisualStyleBackColor = false;
+            this.btnUpdatePassword.Click += new System.EventHandler(this.btnUpdatePassword_Click);
+            // 
+            // txtNewPass2
+            // 
+            this.txtNewPass2.Location = new System.Drawing.Point(136, 164);
+            this.txtNewPass2.Name = "txtNewPass2";
+            this.txtNewPass2.PasswordChar = '*';
+            this.txtNewPass2.Size = new System.Drawing.Size(184, 20);
+            this.txtNewPass2.TabIndex = 7;
+            // 
+            // txtNewPass1
+            // 
+            this.txtNewPass1.Location = new System.Drawing.Point(136, 73);
+            this.txtNewPass1.Name = "txtNewPass1";
+            this.txtNewPass1.PasswordChar = '*';
+            this.txtNewPass1.Size = new System.Drawing.Size(184, 20);
+            this.txtNewPass1.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(13, 166);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(87, 18);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "password:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(13, 148);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 18);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Confirm new";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(13, 76);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(125, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "New password:";
             // 
             // AccountSettings
             // 
