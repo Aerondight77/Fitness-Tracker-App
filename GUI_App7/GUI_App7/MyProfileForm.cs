@@ -143,10 +143,5 @@ namespace GUI_App7
             }
 
         }
-
-        //public void insertBMItoDB()
-        //{
-
-        //}
     }
 }

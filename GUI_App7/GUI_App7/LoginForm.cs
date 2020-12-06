@@ -62,19 +62,6 @@ namespace GUI_App7
                     MessageBox.Show("Invalid credentials. Please try again.");
                 }
             }
-
-            //if (txtUsernameLogin.Text == "admin" && txtPassword.Text == "test123")
-            //{
-                //new MainForm().Show();
-                //this.Hide();
-            //}
-            //else 
-            //{
-                //MessageBox.Show("The Username or Password is invalid, try again!");
-                //txtUsernameLogin.Clear();
-                //txtPassword.Clear();
-                //txtUsernameLogin.Focus();
-            //}
         }
 
         private void label2_Click(object sender, EventArgs e)
