@@ -117,11 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="richTextBox2.Text" xml:space="preserve">
-    <value>1. Add the berries, banana, Greek yogurt, almond milk, and peanut butter to a blender and blend until smooth.
-
-2. Top with your favorite toppings.
-
-3. Nutrition Calories: 1709 Fat: 130 grams Carbs: 108 grams Fiber: 37 grams Sugars: 48 grams Protein: 57 grams</value>
-  </data>
 </root>

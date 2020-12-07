@@ -29,7 +29,6 @@ namespace GUI_App7
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BerrySMB));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -120,7 +119,8 @@ namespace GUI_App7
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(440, 283);
             this.richTextBox2.TabIndex = 3;
-            this.richTextBox2.Text = resources.GetString("richTextBox2.Text");
+            this.richTextBox2.Text = "1. Add the berries, banana, Greek yogurt, almond milk, and peanut butter to a ble" +
+    "nder and blend until smooth.\n\n2. Top with your favorite toppings.";
             // 
             // label19
             // 
